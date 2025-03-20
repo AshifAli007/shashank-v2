@@ -199,13 +199,13 @@ const index: React.FC<indexProps> = () => {
           <header className="header">
             <div className="header__hero">
               <div className="header__hero--heading">
-                <span>turning ideas into </span> <br />
-                <span>real life </span>
+                <span>From concept to creation </span> <br />
+                <span>engineering </span>
                 <span className="header__hero--heading-gradient">
-                  products{" "}
+                  {" "}products{" "}
                 </span>
                 <br />
-                <span>is my calling.</span>
+                <span>that make impact.</span>
               </div>
               <a
                 data-scroll-to
