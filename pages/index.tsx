@@ -86,7 +86,7 @@ const index: React.FC<indexProps> = () => {
 
     console.clear();
     console.log.apply(console, [
-      "%c Designed and Developed by Adeola Adeoti %c %c🚀 %c\n",
+      "%c Designed and Developed by Shashank Chaudhary %c %c🚀 %c\n",
       "color: #fff; background: #8000ff; padding:5px 0;",
       "color: #fff; background: #242424; padding:5px 0 5px 5px;",
       "background: #242424; padding:5px 0",
@@ -129,7 +129,7 @@ const index: React.FC<indexProps> = () => {
             name="apple-mobile-web-app-status-bar-style"
             content="#10101A"
           />
-          <title>Adeola Adeoti 🚀 &mdash; Frontend Devloper</title>
+          <title>Shashank Chaudhary 🚀 &mdash; Frontend Devloper</title>
           <meta
             name="description"
             content="I'm a self-taught Front End Developer and turning ideas into real life products is my calling."
@@ -137,7 +137,7 @@ const index: React.FC<indexProps> = () => {
           <meta property="og:type" content="website" />
           <meta
             property="og:title"
-            content="Adeola Adeoti 🚀 &mdash; Frontend Devloper"
+            content="Shashank Chaudhary 🚀 &mdash; Frontend Devloper"
           />
           <meta property="og:url" content="https://adeolaadeoti.xyz/" />
           <meta property="og:image" content="webp/preview-image.png" />
@@ -147,7 +147,7 @@ const index: React.FC<indexProps> = () => {
           />
           <meta
             name="twitter:title"
-            content="Adeola Adeoti 🚀 &mdash; Frontend Devloper"
+            content="Shashank Chaudhary 🚀 &mdash; Frontend Devloper"
           />
           <meta
             name="twitter:description"
@@ -311,7 +311,7 @@ const index: React.FC<indexProps> = () => {
         </div>
         <main className="container">
           <p className="about-text">
-            Hello stranger! 👋, my name is adeola and I am a frontend engineer,
+            Hello stranger! 👋, my name is adeola and I am a mechanical engineer,
             passionate <br /> about digital products that help people experience
             everyday life, not endure it.
           </p>
@@ -484,7 +484,7 @@ const index: React.FC<indexProps> = () => {
                   data-scroll-class="adeola-anim"
                   className="heading-2"
                 >
-                  AdeolaAdeoti
+                  Shashank
                   <br /> version 1
                 </h2>
                 <a
