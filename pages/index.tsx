@@ -333,7 +333,7 @@ const index: React.FC<indexProps> = () => {
                 className="project-card__middle"
                 data-displacement="webp/myDistorsionImage.webp"
               >
-                <img src="webp/alexxandria-1.webp" alt="alexxandria model" />
+                <img src="webp/project1.webp" alt="alexxandria model" />
                 <img src="webp/alexxandria-2.webp" alt="alexxandria logo" />
               </div>
               <div className="project-card__right">
@@ -344,8 +344,8 @@ const index: React.FC<indexProps> = () => {
                   data-scroll-class="alexxandria-anim"
                   className="heading-2"
                 >
-                  Alexxandria
-                  <br /> Forque
+                  Line follower
+                  <br /> Robot
                 </h2>
                 <a
                   rel="noopener"
