@@ -1,3 +1,0 @@
-# Shashank Chaudhary
-
-my portfolio
