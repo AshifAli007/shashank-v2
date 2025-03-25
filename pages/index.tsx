@@ -312,7 +312,7 @@ const index: React.FC<indexProps> = () => {
         <main className="container">
           <p className="about-text">
             Hello stranger! 👋, my name is Shashank and I am a mechanical engineer,
-            passionate <br /> Developing intelligent solutions that optimize performance,
+             <br /> developing intelligent solutions that optimize performance,
              enhance user experience, and drive sustainable innovation.
           </p>
           <section id="sectionProjects" className="section-projects">
