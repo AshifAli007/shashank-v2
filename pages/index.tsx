@@ -123,7 +123,7 @@ const index: React.FC<indexProps> = () => {
       <div id="menu-target" data-scroll-container ref={refScroll}>
         <Head>
           <link rel="icon" href="svg/favicon.svg" />
-          <link href="https://adeolaadeoti.xyz/" rel="canonical" />
+          <link href="https://shashankchaudhary.com/" rel="canonical" />
           <meta name="theme-color" content="#10101A" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
@@ -278,7 +278,7 @@ const index: React.FC<indexProps> = () => {
             </div>
             <div className="header__footer--right">
               <a
-                href="https://github.com/adeolaadeoti"
+                href="https://github.com/sc23bl"
                 rel="noopener"
                 target="_blank"
               >
@@ -394,7 +394,7 @@ const index: React.FC<indexProps> = () => {
                 <a
                   rel="noopener"
                   target="_blank"
-                  href="https://safarika-adeola.netlify.app/"
+                  href="https://shashankchaudhary.com/"
                   className="project-card__link"
                 >
                   VISIT THE WEBSITE
@@ -574,10 +574,10 @@ const index: React.FC<indexProps> = () => {
             </h1>
             <h2 className="section-contact__h2">
               Thanks for stopping by, I’m currently looking to join a new team
-              of creative designers and developers. If you think we might be a
-              good fit for one another, send me an
+              of creative engineers. If you think I might be a
+              good fit for one, send me an
               <a
-                href="mailto:adeolaonigegeara@gmail.com"
+                href="mailto:shashank840@outlook.com"
                 rel="noopener"
                 target="_blank"
               >
@@ -607,14 +607,14 @@ const index: React.FC<indexProps> = () => {
                 🐦 Twitter
               </a>
               <a
-                href="https://www.linkedin.com/in/adeoladev"
+                href="https://www.linkedin.com/in/shashch99"
                 rel="noopener"
                 target="_blank"
               >
                 💼 LinkedIn
               </a>
               <a
-                href="https://www.instagram.com/adeolaadeoti_"
+                href="https://www.instagram.com/shankych99"
                 rel="noopener"
                 target="_blank"
               >
@@ -637,7 +637,7 @@ const index: React.FC<indexProps> = () => {
               <img src="svg/dribble.svg" alt="dribble logo" />
             </a>
             <a
-              href="https://github.com/adeolaadeoti/adeolaadeoti-v2"
+              href="https://github.com/sc23bl"
               target="_blank"
               rel="noopener"
             >

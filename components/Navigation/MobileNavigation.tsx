@@ -51,7 +51,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
           <h4 className="navigation-h4">DONT BE A STRANGER</h4>
           <div className="navigation-top__left--links">
             <a
-              href="https://github.com/adeolaadeoti"
+              href="https://github.com/sc23bl"
               rel="noopener"
               target="_blank"
             >
@@ -65,14 +65,14 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
               🐦 TW
             </a>
             <a
-              href="https://www.linkedin.com/in/adeoladev"
+              href="https://www.linkedin.com/in/shashch99"
               rel="noopener"
               target="_blank"
             >
               💼 LD
             </a>
             <a
-              href="https://www.instagram.com/adeolaadeoti_"
+              href="https://www.instagram.com/shankych99"
               rel="noopener"
               target="_blank"
             >
@@ -83,7 +83,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
         <div className="navigation-top__right">
           <h4 className="navigation-h4">HAVE AN IDEA?</h4>
           <a
-            href="mailto:adeolaonigegeara@gmail.com"
+            href="mailto:shashank840@outlook.com"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
@@ -116,7 +116,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
             </h2>
           </a>
           <a
-            href="https://safarika-adeola.netlify.app/"
+            href="https://shashankchaudhary.com/"
             target="_blank"
             rel="noopener"
             className="navigation-bottom__projects-card"
@@ -125,14 +125,14 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
             <h2>Safarika</h2>
           </a>
           <a
-            href="https://adeolaadeoti.netlify.app/"
+            href="https://shashankchaudhary.com/"
             target="_blank"
             rel="noopener"
             className="navigation-bottom__projects-card"
           >
-            <img src="webp/adeola-1.webp" alt="adeola" />
+            <img src="webp/adeola-1.webp" alt="shashank" />
             <h2>
-              AdeolaAdeoti
+              Shashank Chaudhary 
               <br />
               Version 1
             </h2>
