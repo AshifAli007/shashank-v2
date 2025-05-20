@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import { cubicBezier, motion } from "framer-motion";
+// import { cubicBezier, motion } from "framer-motion";
 import { Navigation } from "../components/Navigation/Navigation";
 import useSwr from "swr";
 import ReactGa from "react-ga";
@@ -21,11 +21,11 @@ const locomotiveScroll =
 const hoverEffect =
   typeof window !== `undefined` ? require("hover-effect").default : null;
 
-const transition: { duration: number; ease: any } = {
-  duration: 1.4,
-  ease: cubicBezier(0.6, 0.01, -0.05, 0.9),
-  // ease: [0.6, 0.01, -0.05, 0.9],
-};
+// const transition: { duration: number; ease: any } = {
+//   duration: 1.4,
+//   ease: cubicBezier(0.6, 0.01, -0.05, 0.9),
+//   // ease: [0.6, 0.01, -0.05, 0.9],
+// };
 
 const fetcher = (url: any) => fetch(url).then((res) => res.json());
 
@@ -118,14 +118,14 @@ const index: React.FC<indexProps> = () => {
       setIsToggleOpen(false);
     }
   }
-  const technologies = [
-    { id: 1, name: "React", image: "svg/autocad.png", alt: "React logo" },
-    { id: 2, name: "JavaScript", image: "svg/javascript.svg", alt: "JavaScript logo" },
-    { id: 3, name: "TypeScript", image: "svg/typescript.svg", alt: "TypeScript logo" },
-    { id: 4, name: "Node.js", image: "svg/nodejs.svg", alt: "Node.js logo" },
-    { id: 5, name: "HTML5", image: "svg/html5.svg", alt: "HTML5 logo" },
-    { id: 6, name: "CSS3", image: "svg/css3.svg", alt: "CSS3 logo" },
-  ];
+  // const technologies = [
+  //   { id: 1, name: "React", image: "svg/autocad.png", alt: "React logo" },
+  //   { id: 2, name: "JavaScript", image: "svg/javascript.svg", alt: "JavaScript logo" },
+  //   { id: 3, name: "TypeScript", image: "svg/typescript.svg", alt: "TypeScript logo" },
+  //   { id: 4, name: "Node.js", image: "svg/nodejs.svg", alt: "Node.js logo" },
+  //   { id: 5, name: "HTML5", image: "svg/html5.svg", alt: "HTML5 logo" },
+  //   { id: 6, name: "CSS3", image: "svg/css3.svg", alt: "CSS3 logo" },
+  // ];
 
   return (
     <>
