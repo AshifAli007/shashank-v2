@@ -166,6 +166,7 @@
 
   .project-card {
     margin-right: 8rem;
+    padding: 30px;
     .project-card__middle {
       flex: 0 0 60%; /* Make it occupy 60% of the card */
       max-width: 60%; /* Ensure it doesn't exceed 60% */
@@ -190,7 +191,6 @@
     border-radius: 7.3rem;
     display: flex;
     align-items: center;
-    padding: 1rem;
     position: relative;
 
     @media only screen and (max-width: 57em) {
@@ -269,7 +269,7 @@
     }
 
     &__left {
-      margin-right: 4rem;
+      margin-right: 2rem;
       @media only screen and (max-width: 57em) {
         order: 2;
 
@@ -296,8 +296,8 @@
       }
     }
     &__middle {
-      width: 55rem;
-      height: 40rem;
+      width: 40rem;
+      height: 30rem;
       background-size: cover;
       position: relative;
       border-radius: 5.3rem;
@@ -348,7 +348,7 @@
       }
     }
     &__right {
-      margin-left: 6rem;
+      margin-left: 2rem;
       @media only screen and (max-width: 57em) {
         margin-left: 0rem;
         display: flex;
@@ -358,7 +358,7 @@
         margin-top: 2rem;
       }
       h2 {
-        margin-bottom: 6rem;
+        margin-bottom: 2rem;
         @media only screen and (max-width: 57em) {
           margin-bottom: 3rem;
         }
@@ -526,7 +526,6 @@
 .section-contact {
   grid-column: 2/14;
   padding: 0 6rem;
-  margin-top: 12rem;
 
   @media only screen and (max-width: 57em) {
     grid-column: 1/15;
