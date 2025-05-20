@@ -322,19 +322,19 @@ const index: React.FC<indexProps> = () => {
             <p className="paragraph">
               Each project is unique. Here are some of my works.
             </p>
-
+            
             <div className="project-card">
               <div className="project-card__left">
                 <h4 className="heading-4">
-                  NEXT JS, LOCOMOTIVE SCROLL, FRAMER MOTION
+                  SOLIDWORKS, AUTOCAD, LOTUS, ADAMS CAR, ANSYS
                 </h4>
               </div>
               <div
                 className="project-card__middle"
                 data-displacement="webp/myDistorsionImage.webp"
               >
-                <img src="webp/project1.webp" alt="alexxandria model" />
-                <img src="webp/alexxandria-2.webp" alt="alexxandria logo" />
+                <img src="svg/supra1.png" alt="alexxandria model" />
+                <img src="svg/supra2.png" alt="alexxandria logo" />
               </div>
               <div className="project-card__right">
                 <h2
@@ -344,29 +344,13 @@ const index: React.FC<indexProps> = () => {
                   data-scroll-class="alexxandria-anim"
                   className="heading-2"
                 >
-                  Line follower
-                  <br /> Robot
+                  Formulaa
+                  <br /> SAE
                 </h2>
-                <a
-                  rel="noopener"
-                  target="_blank"
-                  href="https://alexxandria.vercel.app/"
-                  className="project-card__link"
-                >
-                  VISIT THE WEBSITE
-                </a>
-                <div className="project-card__socials">
-                  <a href="#">
-                    <img src="svg/dribble.svg" alt="dribble icon" />
-                  </a>
-                  <a
-                    rel="noopener"
-                    target="_blank"
-                    href="https://github.com/adeolaadeoti/alexxandria"
-                  >
-                    <img src="svg/github.svg" alt="github icon" />
-                  </a>
-                </div>
+                <p style={{color:'white'}}>
+                In this capstone endeavor I helped take a single-seat formula racer from concept to competition in just nine months, working as both a core design engineer and one of the team drivers. Our brief was to create a car that met the rigorous SAE SUPRA India rulebook while pushing for lighter weight, sharper handling, and service-friendly packaging. My responsibilities spanned 3-D chassis layout in SOLIDWORKS, hard-point definition in Lotus and Adams Car, and FEA of critical components such as the front upright in ANSYS to validate strength-to-weight targets.
+                </p>
+                
               </div>
             </div>
 

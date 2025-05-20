@@ -39,18 +39,18 @@ export const Navigation = ({ isOpen, toggleOpen }: any) => {
         className="menu-top"
       >
         <Link href="/" className="brand-logo">
-          <img
+          {/* <img
             className="brand-logo__icon"
             src="svg/adeola-logo-left.svg"
             alt="adeola logo icon"
-          />
-          <span className="brand-logo__text-wrapper">
+          /> */}
+          {/* <span className="brand-logo__text-wrapper">
             <img
               className="brand-logo__text"
               src="svg/adeola-logo-right.svg"
               alt="adeola logo text"
             />
-          </span>
+          </span> */}
         </Link>
         <MenuToggle toggle={toggleOpen} toggleState={isOpen} />
       </div>

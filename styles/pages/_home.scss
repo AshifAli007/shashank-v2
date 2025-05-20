@@ -12,7 +12,7 @@
     height: 26rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("../../public/webp/hand-left.webp");
+    // background-image: url("../../public/webp/hand-left.webp");
     @media only screen and (max-width: 45em) {
       width: 20rem;
       height: 20rem;
@@ -28,7 +28,7 @@
     height: 45rem;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url("../../public/webp/hand-right.webp");
+    // background-image: url("../../public/webp/hand-right.webp");
     z-index: -1;
 
     @media only screen and (max-width: 45em) {
@@ -160,13 +160,23 @@
   }
 
   p {
-    margin-bottom: 15rem;
+    margin-bottom: 2rem;
     margin-top: 2rem;
   }
 
   .project-card {
-    width: 80%;
-    margin: 20rem auto;
+    .project-card__middle {
+      flex: 0 0 60%; /* Make it occupy 60% of the card */
+      max-width: 60%; /* Ensure it doesn't exceed 60% */
+    }
+    .project-card__middle img {
+      max-width: 100%; /* Ensure the image does not exceed the container's width */
+      max-height: 100%; /* Ensure the image does not exceed the container's height */
+      object-fit: contain; /* Ensure the entire image is visible without cropping */
+      display: block; /* Remove any inline spacing issues */
+    }
+    display: flex; /* Ensure the card uses flexbox */
+  align-items: center; 
     background: linear-gradient(
       180deg,
       rgba(35, 37, 49, 0.5) 0%,
@@ -179,7 +189,7 @@
     border-radius: 7.3rem;
     display: flex;
     align-items: center;
-    padding: 6rem;
+    padding: 1rem;
     position: relative;
 
     @media only screen and (max-width: 57em) {
@@ -302,13 +312,13 @@
         border-radius: 3rem;
       }
 
-      canvas {
-        position: absolute;
-        // border-radius: inherit !important;
-        z-index: 0;
-        width: 100% !important;
-        height: 100% !important;
-      }
+      // canvas {
+      //   position: absolute;
+      //   // border-radius: inherit !important;
+      //   z-index: 0;
+      //   width: 100% !important;
+      //   height: 100% !important;
+      // }
 
       img {
         width: 100%;
@@ -394,7 +404,23 @@
     }
   }
 }
+.project-card__middle {
+  position: relative;
+  width: 100%; /* Ensure it spans the full width of its parent */
+  height: 100%; /* Ensure it spans the full height of its parent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent any overflow outside the container */
+  background-color: #000; /* Optional: Add a background color for clarity */
+}
 
+.project-card__middle img {
+  max-width: 100%; /* Ensure the image does not exceed the container's width */
+  max-height: 100%; /* Ensure the image does not exceed the container's height */
+  object-fit: contain; /* Ensure the entire image is visible without cropping */
+  display: block; /* Remove any inline spacing issues */
+}
 // section=reviews
 
 .section-reviews__bg {
