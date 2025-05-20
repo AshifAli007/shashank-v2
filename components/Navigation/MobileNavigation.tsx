@@ -54,15 +54,8 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
               href="https://github.com/sc23bl"
               rel="noopener"
               target="_blank"
-            >
+            >-
               👾 GH
-            </a>
-            <a
-              href="https://twitter.com/adeolajs"
-              rel="noopener"
-              target="_blank"
-            >
-              🐦 TW
             </a>
             <a
               href="https://www.linkedin.com/in/shashch99"
@@ -134,7 +127,6 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
             <h2>
               Shashank Chaudhary 
               <br />
-              Version 1
             </h2>
           </a>
         </div>
