@@ -5,7 +5,7 @@ import { Navigation } from "../components/Navigation/Navigation";
 import useSwr from "swr";
 import ReactGa from "react-ga";
 
-interface indexProps {}
+interface indexProps { }
 
 interface Ireply {
   id: number;
@@ -13,6 +13,7 @@ interface Ireply {
   userName: string;
   reply: string;
 }
+
 
 const locomotiveScroll =
   typeof window !== `undefined` ? require("locomotive-scroll").default : null;
@@ -117,6 +118,14 @@ const index: React.FC<indexProps> = () => {
       setIsToggleOpen(false);
     }
   }
+  const technologies = [
+    { id: 1, name: "React", image: "svg/autocad.png", alt: "React logo" },
+    { id: 2, name: "JavaScript", image: "svg/javascript.svg", alt: "JavaScript logo" },
+    { id: 3, name: "TypeScript", image: "svg/typescript.svg", alt: "TypeScript logo" },
+    { id: 4, name: "Node.js", image: "svg/nodejs.svg", alt: "Node.js logo" },
+    { id: 5, name: "HTML5", image: "svg/html5.svg", alt: "HTML5 logo" },
+    { id: 6, name: "CSS3", image: "svg/css3.svg", alt: "CSS3 logo" },
+  ];
 
   return (
     <>
@@ -160,7 +169,7 @@ const index: React.FC<indexProps> = () => {
         <audio loop id="audioPlayer" autoPlay style={{ display: "none" }}>
           <source src="sound/preloader.mp3" type="audio/mp3" />
         </audio>
-        <motion.div
+        {/* <motion.div
           data-scroll
           data-scroll-sticky
           data-scroll-target="#menu-target"
@@ -173,7 +182,7 @@ const index: React.FC<indexProps> = () => {
               animate={{ x: 0, opacity: 1, transition: { ...transition } }}
               className="preloader__left"
             >
-              {/* <img src="svg/adeola-logo-left.svg" alt="adeola logo" /> */}
+              <img src="svg/adeola-logo-left.svg" alt="adeola logo" />
             </motion.div>
             <motion.div
               initial={{ x: 10, opacity: 0 }}
@@ -189,7 +198,7 @@ const index: React.FC<indexProps> = () => {
               <p className="preloader__text">BIOMECHANICS</p>
             </motion.div>
           </div>
-        </motion.div>
+        </motion.div> */}
         <div className="cursor"></div>
         <Navigation
           isOpen={isToggleOpen}
@@ -221,11 +230,10 @@ const index: React.FC<indexProps> = () => {
               <div className="speaker">
                 <div
                   onClick={handleSpeaker}
-                  className={`${"speaker__toggle"} ${
-                    speakerState === "unmuted"
-                      ? `${"speaker__toggle--anim"}`
-                      : ``
-                  }`}
+                  className={`${"speaker__toggle"} ${speakerState === "unmuted"
+                    ? `${"speaker__toggle--anim"}`
+                    : ``
+                    }`}
                 >
                   &nbsp;
                 </div>
@@ -311,189 +319,219 @@ const index: React.FC<indexProps> = () => {
         </div>
         <main className="container">
           <p className="about-text">
-            Hello stranger! 👋, my name is Shashank and I am a mechanical engineer,
-             <br /> developing intelligent solutions that optimize performance,
-             enhance user experience, and drive sustainable innovation.
+            Hi! 👋, my name is Shashank and I am a mechanical engineer,
+            <br /> developing intelligent solutions that optimize performance,
+            enhance user experience, and drive sustainable innovation.
           </p>
           <section id="sectionProjects" className="section-projects">
             <h1 className="heading-1">
-              <span>Yeah, I work hard </span> <small>💼</small>
+              <div><span>Robotics </span> <small>🦾</small></div>
+
+              <p className="paragraph">
+                Each project is unique. Here are some of my works.
+              </p>
             </h1>
-            <p className="paragraph">
-              Each project is unique. Here are some of my works.
-            </p>
-            
-            <div className="project-card">
-              <div className="project-card__left">
-                <h4 className="heading-4">
-                  SOLIDWORKS, AUTOCAD, LOTUS, ADAMS CAR, ANSYS
-                </h4>
-              </div>
-              <div
-                className="project-card__middle"
-                data-displacement="webp/myDistorsionImage.webp"
-              >
-                <img src="svg/supra1.png" alt="alexxandria model" />
-                <img src="svg/supra2.png" alt="alexxandria logo" />
-              </div>
-              <div className="project-card__right">
-                <h2
-                  data-scroll
-                  data-scroll-offset="35%"
-                  data-scroll-repeat={true}
-                  data-scroll-class="alexxandria-anim"
-                  className="heading-2"
-                >
-                  Formulaa
-                  <br /> SAE
-                </h2>
-                <p style={{color:'white'}}>
-                In this capstone endeavor I helped take a single-seat formula racer from concept to competition in just nine months, working as both a core design engineer and one of the team drivers. Our brief was to create a car that met the rigorous SAE SUPRA India rulebook while pushing for lighter weight, sharper handling, and service-friendly packaging. My responsibilities spanned 3-D chassis layout in SOLIDWORKS, hard-point definition in Lotus and Adams Car, and FEA of critical components such as the front upright in ANSYS to validate strength-to-weight targets.
-                </p>
-                
-              </div>
-            </div>
 
-            <div className="project-card">
-              <div className="project-card__left">
-                <h4 className="heading-4">REACT JS, FRAMER MOTION</h4>
-              </div>
-              <div
-                className="project-card__middle"
-                data-displacement="webp/myDistorsionImage.webp"
-              >
-                <img src="webp/safarika-1.webp" alt="safarika" />
-                <img src="webp/safarika-2.webp" alt="safarika logo" />
-              </div>
-              <div className="project-card__right">
-                <h2
-                  data-scroll
-                  data-scroll-offset="35%"
-                  data-scroll-repeat={true}
-                  data-scroll-class="safarika-anim"
-                  className="heading-2"
+            <div className="Robotics-projects">
+              <div className="project-card">
+                <div className="project-card__left">
+                  <h4 className="heading-4">
+                    SOLIDWORKS, AUTOCAD, LOTUS, ADAMS CAR, ANSYS
+                  </h4>
+                </div>
+                <div
+                  className="project-card__middle"
+                  data-displacement="webp/myDistorsionImage.webp"
                 >
-                  Safarika
-                </h2>
-                <a
-                  rel="noopener"
-                  target="_blank"
-                  href="https://shashankchaudhary.com/"
-                  className="project-card__link"
+                  <img src="svg/supra1.png" alt="alexxandria model" />
+                  <img src="svg/supra2.png" alt="alexxandria logo" />
+                </div>
+                <div className="project-card__right">
+                  <h2
+                    data-scroll
+                    data-scroll-offset="35%"
+                    data-scroll-repeat={true}
+                    data-scroll-class="alexxandria-anim"
+                    className="heading-2"
+                  >
+                    Formulaa
+                    <br /> SAE
+                  </h2>
+                  <p style={{ color: 'white' }}>
+                    In this capstone endeavor I helped take a single-seat formula racer from concept to competition in just nine months, working as both a core design engineer and one of the team drivers. Our brief was to create a car that met the rigorous SAE SUPRA India rulebook while pushing for lighter weight, sharper handling.
+                  </p>
+
+                </div>
+              </div>
+              <div className="project-card">
+                <div className="project-card__left">
+                  <h4 className="heading-4">
+                    SOLIDWORKS, AUTOCAD, LOTUS, ADAMS CAR, ANSYS
+                  </h4>
+                </div>
+                <div
+                  className="project-card__middle"
+                  data-displacement="webp/myDistorsionImage.webp"
                 >
-                  VISIT THE WEBSITE
-                </a>
-                <div className="project-card__socials">
-                  <a
-                    rel="noopener"
-                    target="_blank"
-                    href="https://dribbble.com/shots/12361426-Safarika-Adventure"
+                  <img src="svg/supra1.png" alt="alexxandria model" />
+                  <img src="svg/supra2.png" alt="alexxandria logo" />
+                </div>
+                <div className="project-card__right">
+                  <h2
+                    data-scroll
+                    data-scroll-offset="35%"
+                    data-scroll-repeat={true}
+                    data-scroll-class="alexxandria-anim"
+                    className="heading-2"
                   >
-                    <img src="svg/dribble.svg" alt="dribble icon" />
-                  </a>
-                  <a
-                    rel="noopener"
-                    target="_blank"
-                    href="https://github.com/adeolaadeoti/safarika"
-                  >
-                    <img src="svg/github.svg" alt="github icon" />
-                  </a>
+                    Formulaa
+                    <br /> SAE
+                  </h2>
+                  <p style={{ color: 'white' }}>
+                    In this capstone endeavor I helped take a single-seat formula racer from concept to competition in just nine months, working as both a core design engineer and one of the team drivers. Our brief was to create a car that met the rigorous SAE SUPRA India rulebook while pushing for lighter weight, sharper handling.
+                  </p>
+
                 </div>
               </div>
             </div>
 
-            <div className="project-card">
-              <div className="project-card__left">
-                <h4 className="heading-4">
-                  NEXT JS, LOCOMOTIVE SCROLL, FRAMER MOTION
-                </h4>
-              </div>
-              <div
-                className="project-card__middle"
-                data-displacement="webp/myDistorsionImage.webp"
-              >
-                <img src="webp/heatrow-1.webp" alt="heatrow" />
-                <img src="webp/heatrow-2.webp" alt="heatrow logo" />
-              </div>
-              <div className="project-card__right">
-                <h2
-                  data-scroll
-                  data-scroll-offset="35%"
-                  data-scroll-repeat={true}
-                  data-scroll-class="heatrow-anim"
-                  className="heading-2"
+            <h1 className="heading-1">
+
+              <div><span>Design </span> <small>🚁</small></div>
+
+              <p className="paragraph">
+                Each project is unique. Here are some of my works.
+              </p>
+            </h1>
+            <div className="Robotics-projects">
+              <div className="project-card">
+                <div className="project-card__left">
+                  <h4 className="heading-4">
+                    SOLIDWORKS, AUTOCAD, LOTUS, ADAMS CAR, ANSYS
+                  </h4>
+                </div>
+                <div
+                  className="project-card__middle"
+                  data-displacement="webp/myDistorsionImage.webp"
                 >
-                  Heatrow
-                  <br /> Estate
-                </h2>
-                <a
-                  href="https://heatrow.vercel.app/"
-                  rel="noopener"
-                  target="_blank"
-                  className="project-card__link"
-                >
-                  VISIT THE WEBSITE
-                </a>
-                <div className="project-card__socials">
-                  <a href="#">
-                    <img src="svg/dribble.svg" alt="dribble icon" />
-                  </a>
-                  <a
-                    rel="noopener"
-                    target="_blank"
-                    href="https://github.com/adeolaadeoti/heatrow"
+                  <img src="svg/supra1.png" alt="alexxandria model" />
+                  <img src="svg/supra2.png" alt="alexxandria logo" />
+                </div>
+                <div className="project-card__right">
+                  <h2
+                    data-scroll
+                    data-scroll-offset="35%"
+                    data-scroll-repeat={true}
+                    data-scroll-class="alexxandria-anim"
+                    className="heading-2"
                   >
-                    <img src="svg/github.svg" alt="github icon" />
-                  </a>
+                    Formulaa
+                    <br /> SAE
+                  </h2>
+                  <p style={{ color: 'white' }}>
+                    In this capstone endeavor I helped take a single-seat formula racer from concept to competition in just nine months, working as both a core design engineer and one of the team drivers. Our brief was to create a car that met the rigorous SAE SUPRA India rulebook while pushing for lighter weight, sharper handling.
+                  </p>
+
+                </div>
+              </div>
+              <div className="project-card">
+                <div className="project-card__left">
+                  <h4 className="heading-4">
+                    SOLIDWORKS, AUTOCAD, LOTUS, ADAMS CAR, ANSYS
+                  </h4>
+                </div>
+                <div
+                  className="project-card__middle"
+                  data-displacement="webp/myDistorsionImage.webp"
+                >
+                  <img src="svg/supra1.png" alt="alexxandria model" />
+                  <img src="svg/supra2.png" alt="alexxandria logo" />
+                </div>
+                <div className="project-card__right">
+                  <h2
+                    data-scroll
+                    data-scroll-offset="35%"
+                    data-scroll-repeat={true}
+                    data-scroll-class="alexxandria-anim"
+                    className="heading-2"
+                  >
+                    Formulaa
+                    <br /> SAE
+                  </h2>
+                  <p style={{ color: 'white' }}>
+                    In this capstone endeavor I helped take a single-seat formula racer from concept to competition in just nine months, working as both a core design engineer and one of the team drivers. Our brief was to create a car that met the rigorous SAE SUPRA India rulebook while pushing for lighter weight, sharper handling.
+                  </p>
+
                 </div>
               </div>
             </div>
+            <h1 className="heading-1">
 
-            <div className="project-card">
-              <div className="project-card__left">
-                <h4 className="heading-4">HTML, SCSS, JAVASCRIPT, GSAP</h4>
-              </div>
-              <div
-                className="project-card__middle"
-                data-displacement="webp/myDistorsionImage.webp"
-              >
-                <img src="webp/adeola-1.webp" alt="adeola model" />
-                <img src="webp/adeola-2.webp" alt="adeola logo" />
-              </div>
-              <div className="project-card__right">
-                <h2
-                  data-scroll
-                  data-scroll-offset="35%"
-                  data-scroll-repeat={true}
-                  data-scroll-class="adeola-anim"
-                  className="heading-2"
+              <div><span>AutoCad </span> <small>🛰️</small></div>
+
+              <p className="paragraph">
+                Each project is unique. Here are some of my works.
+              </p>
+            </h1>
+            <div className="Robotics-projects">
+              <div className="project-card">
+                <div className="project-card__left">
+                  <h4 className="heading-4">
+                    SOLIDWORKS, AUTOCAD, LOTUS, ADAMS CAR, ANSYS
+                  </h4>
+                </div>
+                <div
+                  className="project-card__middle"
+                  data-displacement="webp/myDistorsionImage.webp"
                 >
-                  Shashank
-                  <br /> version 1
-                </h2>
-                <a
-                  rel="noopener"
-                  target="_blank"
-                  href="https://github.com/adeolaadeoti/adeolaadeoti-portfolio"
-                  className="project-card__link"
+                  <img src="svg/supra1.png" alt="alexxandria model" />
+                  <img src="svg/supra2.png" alt="alexxandria logo" />
+                </div>
+                <div className="project-card__right">
+                  <h2
+                    data-scroll
+                    data-scroll-offset="35%"
+                    data-scroll-repeat={true}
+                    data-scroll-class="alexxandria-anim"
+                    className="heading-2"
+                  >
+                    Formulaa
+                    <br /> SAE
+                  </h2>
+                  <p style={{ color: 'white' }}>
+                    In this capstone endeavor I helped take a single-seat formula racer from concept to competition in just nine months, working as both a core design engineer and one of the team drivers. Our brief was to create a car that met the rigorous SAE SUPRA India rulebook while pushing for lighter weight, sharper handling.
+                  </p>
+
+                </div>
+              </div>
+              <div className="project-card">
+                <div className="project-card__left">
+                  <h4 className="heading-4">
+                    SOLIDWORKS, AUTOCAD, LOTUS, ADAMS CAR, ANSYS
+                  </h4>
+                </div>
+                <div
+                  className="project-card__middle"
+                  data-displacement="webp/myDistorsionImage.webp"
                 >
-                  VIEW SOURCE CODE
-                </a>
-                <div className="project-card__socials">
-                  <a
-                    rel="noopener"
-                    target="_blank"
-                    href="https://dribbble.com/shots/12338926-Adeola-Adeoti-Portfolio"
+                  <img src="svg/supra1.png" alt="alexxandria model" />
+                  <img src="svg/supra2.png" alt="alexxandria logo" />
+                </div>
+                <div className="project-card__right">
+                  <h2
+                    data-scroll
+                    data-scroll-offset="35%"
+                    data-scroll-repeat={true}
+                    data-scroll-class="alexxandria-anim"
+                    className="heading-2"
                   >
-                    <img src="svg/dribble.svg" alt="dribble icon" />
-                  </a>
-                  <a
-                    rel="noopener"
-                    target="_blank"
-                    href="https://github.com/adeolaadeoti/adeolaadeoti-portfolio"
-                  >
-                    <img src="svg/github.svg" alt="github icon" />
-                  </a>
+                    Formulaa
+                    <br /> SAE
+                  </h2>
+                  <p style={{ color: 'white' }}>
+                    In this capstone endeavor I helped take a single-seat formula racer from concept to competition in just nine months, working as both a core design engineer and one of the team drivers. Our brief was to create a car that met the rigorous SAE SUPRA India rulebook while pushing for lighter weight, sharper handling.
+                  </p>
+
                 </div>
               </div>
             </div>
@@ -507,10 +545,10 @@ const index: React.FC<indexProps> = () => {
           >
             <div className="section-reviews__top">
               <h1 className="heading-1">
-                <span>Mmmm, a little brag </span> <small>😊</small>
+                <span>Technologies  <small>🚀</small></span>
               </h1>
-              <p className="paragraph paragraph__sub">
-                What people are saying about my last portfolio
+              <p className="paragraph" style={{ fontSize: '2rem' }}>
+                What Technologies I Used
               </p>
             </div>
             <div className="section-reviews__bottom">
@@ -519,44 +557,26 @@ const index: React.FC<indexProps> = () => {
                   <div key={review.id} className="review-card">
                     <div className="review-card__top">
                       <div className="review-card__top--left">
-                        <p className="review-card__p">{review.name}</p>
-                        <h3 className="review-card__h3">{review.userName}</h3>
+                        <img src="svg/drone.png" className="tech-image" />
                       </div>
-                      <div className="review-card__top--right">
+                      {/* <div className="review-card__top--right">
                         <img src="svg/twitter.svg" alt="twitter icon" />
-                      </div>
+                      </div> */}
                     </div>
                     <div className="review-card__bottom">
-                      <h2 className="review-card__h2">{review.reply}</h2>
+                      <h2 className="review-card__h2">{"AutoCad"}</h2>
                     </div>
                   </div>
                 ))}
               </div>
-              <div className="section-reviews__bottom-wrapper review-card__anim2">
-                {reviews?.data.sort().map((review: Ireply) => (
-                  <div key={review.id} className="review-card">
-                    <div className="review-card__top">
-                      <div className="review-card__top--left">
-                        <p className="review-card__p">{review.name}</p>
-                        <h3 className="review-card__h3">{review.userName}</h3>
-                      </div>
-                      <div className="review-card__top--right">
-                        <img src="svg/twitter.svg" alt="twitter icon" />
-                      </div>
-                    </div>
-                    <div className="review-card__bottom">
-                      <h2 className="review-card__h2">{review.reply}</h2>
-                    </div>
-                  </div>
-                ))}
-              </div>
+
             </div>
           </section>
           <section className="section-contact">
-            <h1 className="heading-1">
+            {/* <h1 className="heading-1">
               <span>Sold Yet? </span> <small>🤙</small>
-            </h1>
-            <h2 className="section-contact__h2">
+            </h1> */}
+            {/* <h2 className="section-contact__h2">
               Thanks for stopping by, I’m currently looking to join a new team
               of creative engineers. If you think I might be a
               good fit for one, send me an
@@ -568,11 +588,11 @@ const index: React.FC<indexProps> = () => {
                 &nbsp; email 📧
               </a>
               .
-            </h2>
+            </h2> */}
           </section>
           <section className="section-socials">
             <h1 className="heading-1">
-              <span>Dont be a stranger!</span> <small>👋</small>
+              <span>Contact!</span> <small>🔭</small>
             </h1>
             <p className="paragraph">Connect with me online</p>
             <div className="section-socials--links">
@@ -608,10 +628,10 @@ const index: React.FC<indexProps> = () => {
           </section>
         </main>
         <footer className="footer">
-          <img
+          {/* <img
             src="svg/adeola-logo-footer.svg"
             alt="design and devloped by adeola"
-          />
+          /> */}
           <div className="footer__socials">
             <a
               href="https://dribbble.com/shots/16100745-Adeola-Adeoti-Personal-Website"
