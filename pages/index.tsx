@@ -311,7 +311,7 @@ const index: React.FC<indexProps> = () => {
         </div>
         <main className="container">
           <p className="about-text">
-            Hello stranger! 👋, my name is Shashank and I am a mechanical engineer,
+            Hi!👋, my name is Shashank and I am a mechanical engineer,
              <br /> developing intelligent solutions that optimize performance,
              enhance user experience, and drive sustainable innovation.
           </p>
