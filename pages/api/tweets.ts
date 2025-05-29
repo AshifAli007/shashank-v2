@@ -1,90 +1,72 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-interface Ireply {
+
+interface ITechnology {
   id: number;
-  name: string;
-  userName: string;
-  reply: string;
+  technologyName: string;
+  imgSource: string;
 }
 
-const result: Ireply[] = [
+const result: ITechnology[] = [
   {
     id: 0,
-    name: "Name cannot be blank",
-    userName: "@hackSultan",
-    reply: "This is great stuff right here..",
+    technologyName: "Autocad",
+    imgSource: "svg/autocad.png",
   },
   {
     id: 1,
-    name: "Gift Egwuenu ✨",
-    userName: "@lauragift_",
-    reply: "Your projects are amazing! 👍 💪",
+    technologyName: "Solidworks",
+    imgSource: "svg/drone.png",
   },
   {
     id: 2,
-    name: "Champagne Papi",
-    userName: "@loIyparty",
-    reply: "Man your portfolio is 🔥",
+    technologyName: "Catia",
+    imgSource: "svg/catia.png",
   },
   {
     id: 3,
-    name: "Ruks 🦍",
-    userName: "@ruks_ahwin",
-    reply: "Really impressive man 👏",
+    technologyName: "Siemens NX",
+    imgSource: "svg/siemensnx.png",
   },
   {
     id: 4,
-    name: "Amarachi Iheanacho",
-    userName: "@amaraIheanach0",
-    reply: "Your site is elite, lovely work.",
+    technologyName: "Office 365",
+    imgSource: "svg/office365.png",
   },
   {
     id: 5,
-    name: "Moyi.",
-    userName: "@moyiabioye",
-    reply: "Looking good man 🔥🔥",
+    technologyName: "Labview",
+    imgSource: "svg/labview.png",
   },
   {
     id: 6,
-    name: "Shula ☘️",
-    userName: "@AsoAmarachi",
-    reply: "Beautiful site you have! ❤️",
+    technologyName: "Matlab",
+    imgSource: "svg/matlab.png",
   },
   {
     id: 7,
-    name: "8thLegion",
-    userName: "@8thLegion",
-    reply: "Great Portfolio man 🚀🚀🚀...Wish you luck",
+    technologyName: "Python",
+    imgSource: "svg/python.png",
   },
   {
     id: 8,
-    name: "🥷",
-    userName: "@aladearchives",
-    reply: "Whooooaaaaaaa your site is mad",
+    technologyName: "Arduino IDE",
+    imgSource: "svg/arduino.png",
   },
   {
     id: 9,
-    name: "Big Sheddy 🦅",
-    userName: "@coder_blvck",
-    reply: "This is really cool!",
+    technologyName: "Ansys",
+    imgSource: "svg/ansys.png",
   },
   {
     id: 10,
-    name: "Onazi 🦄",
-    userName: "@VictorOnazi_",
-    reply: "🔥 well-done.",
+    technologyName: "Creo",
+    imgSource: "svg/creo.png",
   },
   {
     id: 11,
-    name: "Cynthia 🏳️‍🌈 Sanchez",
-    userName: "@cyntss",
-    reply: "Love your design! sharing now!",
-  },
-  {
-    id: 12,
-    name: "Abiodun Adefila",
-    userName: "@adefaze",
-    reply: "impressive Clapping hands sign wish you success",
+    technologyName: "Simulink",
+    imgSource: "svg/simulink.png",
   },
 ];
 

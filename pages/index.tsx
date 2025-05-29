@@ -9,9 +9,8 @@ interface indexProps { }
 
 interface Ireply {
   id: number;
-  name: string;
-  userName: string;
-  reply: string;
+  technologyName: string;
+  imgSource: string;
 }
 
 
@@ -343,8 +342,8 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
+                  <img src="svg/spice.png" alt="alexxandria model" />
+                  <img src="svg/car_size1.png" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -554,17 +553,19 @@ const index: React.FC<indexProps> = () => {
             <div className="section-reviews__bottom">
               <div className="section-reviews__bottom-wrapper review-card__anim1">
                 {reviews?.data.map((review: Ireply) => (
+
                   <div key={review.id} className="review-card">
                     <div className="review-card__top">
                       <div className="review-card__top--left">
-                        <img src="svg/drone.png" className="tech-image" />
+                        <img src={review.imgSource} className="tech-image" />
                       </div>
                       {/* <div className="review-card__top--right">
                         <img src="svg/twitter.svg" alt="twitter icon" />
                       </div> */}
                     </div>
                     <div className="review-card__bottom">
-                      <h2 className="review-card__h2">{"AutoCad"}</h2>
+
+                      <h2 className="review-card__h2">{review.technologyName}</h2>
                     </div>
                   </div>
                 ))}

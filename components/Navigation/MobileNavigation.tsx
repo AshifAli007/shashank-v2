@@ -74,14 +74,14 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
           </div>
         </div>
         <div className="navigation-top__right">
-          <h4 className="navigation-h4">HAVE AN IDEA?</h4>
+          {/* <h4 className="navigation-h4">HAVE AN IDEA?</h4>
           <a
             href="mailto:shashank840@outlook.com"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
             Tell me about it
-          </a>
+          </a> */}
         </div>
       </motion.div>
 
@@ -93,8 +93,9 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
         }
         className="navigation-bottom"
       >
-        <h4 className="navigation-h4">FEATURED PROJECTS</h4>
-        <div className="navigation-bottom__projects">
+        <h4 className="navigation-h4">RESUME</h4>
+        <p>Hey there my description goes here</p>
+        {/* <div className="navigation-bottom__projects">
           <a
             target="_blank"
             rel="noopener"
@@ -129,7 +130,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
               <br />
             </h2>
           </a>
-        </div>
+        </div> */}
       </motion.div>
     </motion.div>
   </motion.div>
