@@ -16,7 +16,7 @@ const result: ITechnology[] = [
   {
     id: 1,
     technologyName: "Solidworks",
-    imgSource: "svg/drone.png",
+    imgSource: "svg/Solidworks.png",
   },
   {
     id: 2,

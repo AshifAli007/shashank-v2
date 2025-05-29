@@ -299,14 +299,14 @@ const index: React.FC<indexProps> = () => {
                 🐦 TW
               </a>
               <a
-                href="https://www.linkedin.com/in/shankych99"
+                href="https://www.linkedin.com/in/shanky_ch99"
                 rel="noopener"
                 target="_blank"
               >
                 💼 LD
               </a>
               <a
-                href="https://www.instagram.com/shankych99"
+                href="https://www.instagram.com/shanky_ch99"
                 rel="noopener"
                 target="_blank"
               >
@@ -619,7 +619,7 @@ const index: React.FC<indexProps> = () => {
                 💼 LinkedIn
               </a>
               <a
-                href="https://www.instagram.com/shankych99"
+                href="https://www.instagram.com/shanky_ch99"
                 rel="noopener"
                 target="_blank"
               >
