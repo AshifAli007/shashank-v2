@@ -94,7 +94,44 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
         className="navigation-bottom"
       >
         <h4 className="navigation-h4">RESUME</h4>
-        <p>Hey there my description goes here</p>
+        <p>Education
+
+Master of Science, Mechanical Engineering
+Florida State University, Tallahassee, FL | Aug 2023 – May 2025 | GPA: 3.53/4
+
+Bachelor of Science, Mechanical Engineering
+Madan Mohan Malaviya University of Technology, India | Jul 2017 – Aug 2021 | GPA: 3.3/4
+
+Professional Experience
+
+Mechatronics Engineering Intern
+Danfoss Turbocor, Tallahassee, FL | Sept 2024 – Present
+
+Led sensor accuracy improvements and system commissioning on chiller systems
+
+Created 3D CAD models & 2D drawings using Catia, adhering to ASME standards
+
+Performed Finite Element Analysis on compressor components using ANSYS
+
+Teaching & Research Assistant
+Florida State University, Tallahassee, FL | Jan 2024 – Present
+
+Mentored 50+ students in mechanical engineering labs, improving exam scores
+
+Developed thermoelectric generator prototype and analyzed industrial heat decarbonization
+
+Graduate Engineering Trainee
+Sona Comstar, Gurugram, India | Nov 2021 – May 2023
+
+Accelerated product development and optimized EV differential assemblies
+
+Conducted DFMEA, GD&T compliance, and stack-up analyses
+
+Student Projects & Leadership
+
+Co-led SUPRA SAE India Formula team; secured All India Rank 30
+
+Spearheaded powertrain optimization for BAJA SAE India; All India Rank 33</p>
         {/* <div className="navigation-bottom__projects">
           <a
             target="_blank"
