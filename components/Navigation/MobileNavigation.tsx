@@ -48,13 +48,13 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
         className="navigation-top"
       >
         <div className="navigation-top__left">
-          <h4 className="navigation-h4">DONT BE A STRANGER</h4>
+          <h4 className="navigation-h4">CONNECT WITH ME</h4>
           <div className="navigation-top__left--links">
             <a
               href="https://github.com/sc23bl"
               rel="noopener"
               target="_blank"
-            >-
+            >
               👾 GH
             </a>
             <a
@@ -84,91 +84,82 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
           </a> */}
         </div>
       </motion.div>
+    </motion.div>
 
-      <motion.div
-        animate={
-          isOpen
-            ? { opacity: 1, transition: openBottomTransition }
-            : { opacity: 0, transition: closedTansition }
-        }
-        className="navigation-bottom"
-      >
-        <h4 className="navigation-h4">RESUME</h4>
-        <p>Education
+    <motion.div
+      animate={
+        isOpen
+          ? { opacity: 1, transition: openBottomTransition }
+          : { opacity: 0, transition: closedTansition }
+      }
+      className="navigation-bottom"
+    >
+      <div className="resume-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem" }}>
+        <div>
+          <h3><u>EDUCATION</u></h3>
+          <p>
+            <strong>Master of Science, Mechanical Engineering</strong><br />
+            Florida State University, Tallahassee, FL<br />
+            GPA: 3.53/4 | Aug 2023 - May 2025<br /><br />
 
-Master of Science, Mechanical Engineering
-Florida State University, Tallahassee, FL | Aug 2023 – May 2025 | GPA: 3.53/4
+            <strong>Bachelor of Science, Mechanical Engineering</strong><br />
+            Madan Mohan Malaviya University of Technology, India<br />
+            GPA: 3.3/4 | Jul 2017 - Aug 2021
+          </p>
+        </div>
 
-Bachelor of Science, Mechanical Engineering
-Madan Mohan Malaviya University of Technology, India | Jul 2017 – Aug 2021 | GPA: 3.3/4
+        <div>
+          <h3><u>SKILLS</u></h3>
+          <p>
+            <strong>Design & Analysis:</strong> Adams CAR, AutoCAD, ANSYS, Catia V5/V6, Creo, Pro E, Siemens NX, SolidWorks<br />
+            <strong>PLM Tools:</strong> SmarTeam, Teamcenter, Windchill<br />
+            <strong>Languages:</strong> Arduino, C/C++, Curve Fitting, MATLAB, Python, STM32<br />
+            <strong>Manufacturing:</strong> ASME Y14.5, GD&T, Laser cutting, 3D Printing, Sheet metal, Injection Molding, Die Casting
+          </p>
+        </div>
+      </div>
 
-Professional Experience
+      <br />
 
-Mechatronics Engineering Intern
-Danfoss Turbocor, Tallahassee, FL | Sept 2024 – Present
+      <div>
+        <h3><u>PROFESSIONAL EXPERIENCE</u></h3>
+        <p>
+          <strong>Mechatronics Engineering Intern</strong><br />
+          Danfoss Turbocor, Tallahassee, FL | Sept 2024 – Present<br />
+          • Led change management for 3 chiller systems, improving sensor accuracy by 10% through p-h diagram validation.<br />
+          • Commissioned systems, performed testing with accelerometers and calibration tools to validate performance.<br />
+          • Created 3D models and 2D drawings using Catia; conducted DFMEA on compressor models.<br />
+          • Conducted FEA on shaft kits using ANSYS and validated structural integrity.<br /><br />
 
-Led sensor accuracy improvements and system commissioning on chiller systems
+          <strong>Teaching & Research Assistant</strong><br />
+          Florida State University, Tallahassee, FL | Jan 2024 – Dec 2024<br />
+          • Taught labs, mentored 50+ students, raised exam scores by 15%.<br />
+          • Developed and tested thermoelectric generator; analyzed industrial heat data for DOE reports.<br /><br />
 
-Created 3D CAD models & 2D drawings using Catia, adhering to ASME standards
+          <strong>Graduate Engineering Trainee</strong><br />
+          Sona Comstar, Gurugram, India | Nov 2021 – May 2023<br />
+          • Accelerated NPD by 20%, ensured GD&T compliance, and improved EV/hybrid differential efficiency.
+        </p>
+      </div>
 
-Performed Finite Element Analysis on compressor components using ANSYS
+      <br />
 
-Teaching & Research Assistant
-Florida State University, Tallahassee, FL | Jan 2024 – Present
+      <div>
+        <h3><u>PROJECTS & LEADERSHIP</u></h3>
+        <p>
+          <strong>SUPRA SAE India – Formula SAE</strong> | Nov 2018 - Jul 2019<br />
+          • Co-led 15-member team, ranked 30/128. Designed lightweight chassis and gear-by-wire system using SolidWorks.<br /><br />
 
-Mentored 50+ students in mechanical engineering labs, improving exam scores
+          <strong>BAJA SAE India</strong> | Jun 2018 - Mar 2019<br />
+          • Led powertrain optimization (12% gain), ensured full SAE rule compliance, secured $4000 sponsorship.<br /><br />
 
-Developed thermoelectric generator prototype and analyzed industrial heat decarbonization
-
-Graduate Engineering Trainee
-Sona Comstar, Gurugram, India | Nov 2021 – May 2023
-
-Accelerated product development and optimized EV differential assemblies
-
-Conducted DFMEA, GD&T compliance, and stack-up analyses
-
-Student Projects & Leadership
-
-Co-led SUPRA SAE India Formula team; secured All India Rank 30
-
-Spearheaded powertrain optimization for BAJA SAE India; All India Rank 33</p>
-        {/* <div className="navigation-bottom__projects">
-          <a
-            target="_blank"
-            rel="noopener"
-            href="https://alexxandria.vercel.app/"
-            className="navigation-bottom__projects-card"
-          >
-            <img src="webp/alexxandria-nav.webp" alt="alexxandria" />
-            <h2>
-              Alexxandria
-              <br />
-              Forque
-            </h2>
-          </a>
-          <a
-            href="https://shashankchaudhary.com/"
-            target="_blank"
-            rel="noopener"
-            className="navigation-bottom__projects-card"
-          >
-            <img src="webp/safarika-nav.webp" alt="safarika" />
-            <h2>Safarika</h2>
-          </a>
-          <a
-            href="https://shashankchaudhary.com/"
-            target="_blank"
-            rel="noopener"
-            className="navigation-bottom__projects-card"
-          >
-            <img src="webp/adeola-1.webp" alt="shashank" />
-            <h2>
-              Shashank Chaudhary 
-              <br />
-            </h2>
-          </a>
-        </div> */}
-      </motion.div>
+          <strong>Academic Projects:</strong><br />
+          • Double Wishbone Suspension System (Creo, MSC Adams)<br />
+          • Arduino-Based Surveillance Drone (MPU6050, Arduino IDE)<br />
+          • Waste Plastic to Fuel via Pyrolysis<br />
+          • Seeding Mechanism Design (4-person team)
+        </p>
+      </div>
     </motion.div>
   </motion.div>
 );
