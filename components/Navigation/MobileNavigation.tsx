@@ -47,42 +47,6 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
         }
         className="navigation-top"
       >
-        <div className="navigation-top__left">
-          <h4 className="navigation-h4">CONNECT WITH ME</h4>
-          <div className="navigation-top__left--links">
-            <a
-              href="https://github.com/sc23bl"
-              rel="noopener"
-              target="_blank"
-            >
-              👾 GH
-            </a>
-            <a
-              href="https://www.linkedin.com/in/shashch99"
-              rel="noopener"
-              target="_blank"
-            >
-              💼 LD
-            </a>
-            <a
-              href="https://www.instagram.com/shanky_ch99"
-              rel="noopener"
-              target="_blank"
-            >
-              📸 IN
-            </a>
-          </div>
-        </div>
-        <div className="navigation-top__right">
-          {/* <h4 className="navigation-h4">HAVE AN IDEA?</h4>
-          <a
-            href="mailto:shashank840@outlook.com"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-          >
-            Tell me about it
-          </a> */}
-        </div>
       </motion.div>
     </motion.div>
 
@@ -96,24 +60,30 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
     >
       <div className="resume-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem" }}>
         <div>
-          <h3><u>EDUCATION</u></h3>
-          <p>
-            <strong>Master of Science, Mechanical Engineering</strong><br />
-            Florida State University, Tallahassee, FL<br />
-            GPA: 3.53/4 | Aug 2023 - May 2025<br /><br />
+          <h3>EDUCATION</h3>
+          <br />
 
-            <strong>Bachelor of Science, Mechanical Engineering</strong><br />
-            Madan Mohan Malaviya University of Technology, India<br />
-            GPA: 3.3/4 | Jul 2017 - Aug 2021
+          <p>
+            <strong>Florida State University </strong><br />
+            2023 - 2025 M.S. in Mechanical Engineering<br />
+            Cumulative 3.53 GPA <br /><br />
+
+            <strong>Madan Mohan Malaviya University of Technology</strong><br />
+            2017 - 2021 B.S. in Mechanical Engineering<br />
+            Cumulative 3.30 GPA
           </p>
         </div>
 
         <div>
-          <h3><u>SKILLS</u></h3>
+          <h3>SKILLS</h3>
+          <br />
           <p>
             <strong>Design & Analysis:</strong> Adams CAR, AutoCAD, ANSYS, Catia V5/V6, Creo, Pro E, Siemens NX, SolidWorks<br />
+            <br />
             <strong>PLM Tools:</strong> SmarTeam, Teamcenter, Windchill<br />
+            <br />
             <strong>Languages:</strong> Arduino, C/C++, Curve Fitting, MATLAB, Python, STM32<br />
+            <br />
             <strong>Manufacturing:</strong> ASME Y14.5, GD&T, Laser cutting, 3D Printing, Sheet metal, Injection Molding, Die Casting
           </p>
         </div>
