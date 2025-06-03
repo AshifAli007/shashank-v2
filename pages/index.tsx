@@ -292,13 +292,6 @@ const index: React.FC<indexProps> = () => {
                 👾 GH
               </a>
               <a
-                href="https://twitter.com/adeolajs"
-                rel="noopener"
-                target="_blank"
-              >
-                🐦 TW
-              </a>
-              <a
                 href="https://www.linkedin.com/in/shanky_ch99"
                 rel="noopener"
                 target="_blank"
@@ -324,7 +317,7 @@ const index: React.FC<indexProps> = () => {
           </p>
           <section id="sectionProjects" className="section-projects">
             <h1 className="heading-1">
-              <div><span>Robotics </span> <small>🦾</small></div>
+              <div><span>Design </span> <small>🦾</small></div>
 
               <p className="paragraph">
                 Each project is unique. Here are some of my works.
@@ -335,15 +328,15 @@ const index: React.FC<indexProps> = () => {
               <div className="project-card">
                 <div className="project-card__left">
                   <h4 className="heading-4">
-                    SOLIDWORKS, AUTOCAD, LOTUS, ADAMS CAR, ANSYS
+                    CREO, ADAMS CAR
                   </h4>
                 </div>
                 <div
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img src="svg/spice.png" alt="alexxandria model" />
-                  <img src="svg/car_size1.png" alt="alexxandria logo" />
+                  <img src="svg/wishbone.png" alt="alexxandria model" />
+                  <img src="svg/picture1.png" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -353,11 +346,11 @@ const index: React.FC<indexProps> = () => {
                     data-scroll-class="alexxandria-anim"
                     className="heading-2"
                   >
-                    Formulaa
-                    <br /> SAE
+                    Double Wishbone Suspension
+                    <br /> Design 
                   </h2>
-                  <p style={{ color: 'white' }}>
-                    In this capstone endeavor I helped take a single-seat formula racer from concept to competition in just nine months, working as both a core design engineer and one of the team drivers. Our brief was to create a car that met the rigorous SAE SUPRA India rulebook while pushing for lighter weight, sharper handling.
+                  <p style={{ color: 'white', textAlign: 'justify' }}>
+                    This project involved the design of a robust double wishbone suspension system using Creo, followed by dynamic simulation in MSC Adams Car to analyze its performance. The suspension geometry was carefully crafted to enhance vehicle handling and ride comfort. A parallel wheel alignment study was conducted to minimize tire wear and ensure optimal alignment. Various vehicle parameters were analyzed and plotted to assess ride behavior and quality. The system underwent iterative refinement to improve its performance, stability, and overall durability.
                   </p>
 
                 </div>
@@ -365,7 +358,7 @@ const index: React.FC<indexProps> = () => {
               <div className="project-card">
                 <div className="project-card__left">
                   <h4 className="heading-4">
-                    SOLIDWORKS, AUTOCAD, LOTUS, ADAMS CAR, ANSYS
+                    SOLIDWORKS, AUTOCAD, ANSYS, LOTUS, ADAMS CAR
                   </h4>
                 </div>
                 <div
@@ -383,11 +376,11 @@ const index: React.FC<indexProps> = () => {
                     data-scroll-class="alexxandria-anim"
                     className="heading-2"
                   >
-                    Formulaa
-                    <br /> SAE
+                    Formula
+                    <br /> SAE 2019
                   </h2>
-                  <p style={{ color: 'white' }}>
-                    In this capstone endeavor I helped take a single-seat formula racer from concept to competition in just nine months, working as both a core design engineer and one of the team drivers. Our brief was to create a car that met the rigorous SAE SUPRA India rulebook while pushing for lighter weight, sharper handling.
+                  <p style={{ color: 'white', textAlign: 'justify' }}>
+                    In this project, I played a dual role as both a core design engineer and one of the team drivers, helping take a single-seat formula race car from concept to competition within just nine months. The objective was to engineer a vehicle that fully complied with the stringent SAE SUPRA India regulations while aggressively optimizing for reduced weight and enhanced handling precision. 
                   </p>
 
                 </div>
@@ -603,13 +596,6 @@ const index: React.FC<indexProps> = () => {
                 target="_blank"
               >
                 👾 GitHub
-              </a>
-              <a
-                href="https://twitter.com/adeolajs"
-                rel="noopener"
-                target="_blank"
-              >
-                🐦 Twitter
               </a>
               <a
                 href="https://www.linkedin.com/in/shashch99"
