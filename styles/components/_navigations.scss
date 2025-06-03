@@ -217,3 +217,53 @@
   text-align: right;
   min-height: 100%;
 }
+
+
+.navigation-bottom{
+  .profile-header {
+  width: 100%;
+  margin-bottom: 4rem;
+
+  &__name {
+    // font-family: $font-primary;
+    // font-size: 4rem;
+    // font-weight: 400;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+    letter-spacing: 0.01em;
+  }
+
+  &__info {
+    // font-family: $font-primary;
+    // font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: whitesmoke;
+  }
+
+  &__line {
+    border: none;
+    border-top: 2px solid whitesmoke;
+    width: 80%;
+    margin: 2.5rem 0 0 0;
+  }
+
+  &__resume-btn {
+    display: inline-block;
+    background: whitesmoke;
+    color: black;
+    font-family: $font-secondary;
+    padding: 1rem 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 0;
+    text-decoration: none;
+    transition: background 0.2s;
+    position: relative;
+    bottom: 5rem;
+
+    &:hover {
+      background: #77bdb8;
+    }
+  }
+}
+}
