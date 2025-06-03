@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { cubicBezier, motion } from "framer-motion";
 
 
+
 const openTransition = {
   duration: 1.1,
   delay: 1.2,
