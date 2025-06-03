@@ -61,8 +61,6 @@
 }
 
 .brand-logo {
-  // &__icon {
-  // }
   &__text-wrapper {
     overflow: hidden;
     margin-left: 1rem;
@@ -209,4 +207,13 @@
   letter-spacing: 0.19em;
   font-weight: 100;
   cursor: pointer;
+}
+
+.timelineCol {
+  font-weight: 500;
+  color: whitesmoke;
+  border-right: 2px solid #bbb;
+  padding-right: 1.5rem;
+  text-align: right;
+  min-height: 100%;
 }

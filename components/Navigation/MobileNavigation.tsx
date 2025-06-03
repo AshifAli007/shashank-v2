@@ -1,6 +1,7 @@
 import * as React from "react";
 import { cubicBezier, motion } from "framer-motion";
 
+
 const openTransition = {
   duration: 1.1,
   delay: 1.2,
@@ -91,45 +92,139 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
 
       <br />
 
+
       <div>
-        <h3><u>PROFESSIONAL EXPERIENCE</u></h3>
-        <p>
-          <strong>Mechatronics Engineering Intern</strong><br />
-          Danfoss Turbocor, Tallahassee, FL | Sept 2024 – Present<br />
-          • Led change management for 3 chiller systems, improving sensor accuracy by 10% through p-h diagram validation.<br />
-          • Commissioned systems, performed testing with accelerometers and calibration tools to validate performance.<br />
-          • Created 3D models and 2D drawings using Catia; conducted DFMEA on compressor models.<br />
-          • Conducted FEA on shaft kits using ANSYS and validated structural integrity.<br /><br />
+        <h3 style={{ "margin": "3rem 0" }}>
+          PROFESSIONAL EXPERIENCE
+        </h3>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "140px 1fr",
+            gap: "1.5rem",
+            alignItems: "start",
+          }}
+        >
+          <div
+            className="timelineCol"
+          >
+            2024 – Present
+          </div>
+          <div>
+            <strong>Danfoss Turbocor – Mechatronics Engineering Intern</strong>
+            <br />
+            Tallahassee, FL
+            <ul style={{ margin: "0.5em 0 1.5em 1em" }}>
+              <li>
+                Led change management for 3 chiller systems, improving sensor accuracy by 10% through p-h diagram validation.
+              </li>
+              <li>
+                Commissioned systems, performed testing with accelerometers and calibration tools to validate performance.
+              </li>
+              <li>
+                Created 3D models and 2D drawings using Catia; conducted DFMEA on compressor models.
+              </li>
+              <li>
+                Conducted FEA on shaft kits using ANSYS and validated structural integrity.
+              </li>
+            </ul>
+          </div>
 
-          <strong>Teaching & Research Assistant</strong><br />
-          Florida State University, Tallahassee, FL | Jan 2024 – Dec 2024<br />
-          • Taught labs, mentored 50+ students, raised exam scores by 15%.<br />
-          • Developed and tested thermoelectric generator; analyzed industrial heat data for DOE reports.<br /><br />
+          {/* FSU */}
+          <div
+            className="timelineCol"
+          >
+            2024
+          </div>
+          <div>
+            <strong>Florida State University – Teaching & Research Assistant</strong>
+            <br />
+            Tallahassee, FL
+            <ul style={{ margin: "0.5em 0 1.5em 1em" }}>
+              <li>
+                Taught labs, mentored 50+ students, raised exam scores by 15%.
+              </li>
+              <li>
+                Developed and tested thermoelectric generator; analyzed industrial heat data for DOE reports.
+              </li>
+            </ul>
+          </div>
 
-          <strong>Graduate Engineering Trainee</strong><br />
-          Sona Comstar, Gurugram, India | Nov 2021 – May 2023<br />
-          • Accelerated NPD by 20%, ensured GD&T compliance, and improved EV/hybrid differential efficiency.
-        </p>
+          {/* Sona Comstar */}
+          <div
+            className="timelineCol"
+          >
+            2021 – 2023
+          </div>
+          <div>
+            <strong>Sona Comstar – Graduate Engineering Trainee</strong>
+            <br />
+            Gurugram, India
+            <ul style={{ margin: "0.5em 0 1.5em 1em" }}>
+              <li>
+                Accelerated NPD by 20%, ensured GD&T compliance, and improved EV/hybrid differential efficiency.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-
       <br />
-
       <div>
-        <h3><u>PROJECTS & LEADERSHIP</u></h3>
-        <p>
-          <strong>SUPRA SAE India – Formula SAE</strong> | Nov 2018 - Jul 2019<br />
-          • Co-led 15-member team, ranked 30/128. Designed lightweight chassis and gear-by-wire system using SolidWorks.<br /><br />
+        <h3 style={{ margin: "3rem 0" }}>
+          PROJECTS & LEADERSHIP
+        </h3>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "140px 1fr",
+            gap: "1.5rem",
+            alignItems: "start",
+          }}
+        >
+          <div
+            className="timelineCol"
+          >
+            Nov 2018 – Jul 2019
+          </div>
+          <div>
+            <strong>SUPRA SAE India – Formula SAE</strong>
+            <ul style={{ margin: "0.5em 0 1.5em 1em" }}>
+              <li>
+                Co-led 15-member team, ranked 30/128. Designed lightweight chassis and gear-by-wire system using SolidWorks.
+              </li>
+            </ul>
+          </div>
 
-          <strong>BAJA SAE India</strong> | Jun 2018 - Mar 2019<br />
-          • Led powertrain optimization (12% gain), ensured full SAE rule compliance, secured $4000 sponsorship.<br /><br />
+          <div
+            className="timelineCol"
+          >
+            Jun 2018 – Mar 2019
+          </div>
+          <div>
+            <strong>BAJA SAE India</strong>
+            <ul style={{ margin: "0.5em 0 1.5em 1em" }}>
+              <li>
+                Led powertrain optimization (12% gain), ensured full SAE rule compliance, secured $4000 sponsorship.
+              </li>
+            </ul>
+          </div>
 
-          <strong>Academic Projects:</strong><br />
-          • Double Wishbone Suspension System (Creo, MSC Adams)<br />
-          • Arduino-Based Surveillance Drone (MPU6050, Arduino IDE)<br />
-          • Waste Plastic to Fuel via Pyrolysis<br />
-          • Seeding Mechanism Design (4-person team)
-        </p>
+          <div
+            className="timelineCol"
+          >
+            Academic Projects
+          </div>
+          <div>
+            <strong>Selected Projects:</strong>
+            <ul style={{ margin: "0.5em 0 1.5em 1em" }}>
+              <li>Double Wishbone Suspension System (Creo, MSC Adams)</li>
+              <li>Arduino-Based Surveillance Drone (MPU6050, Arduino IDE)</li>
+              <li>Waste Plastic to Fuel via Pyrolysis</li>
+              <li>Seeding Mechanism Design (4-person team)</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </motion.div>
-  </motion.div>
+  </motion.div >
 );
