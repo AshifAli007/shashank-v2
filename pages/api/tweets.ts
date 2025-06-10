@@ -26,12 +26,12 @@ const result: ITechnology[] = [
   {
     id: 3,
     technologyName: "Siemens NX",
-    imgSource: "svg/siemensnx.png",
+    imgSource: "svg/siemens.png",
   },
   {
     id: 4,
     technologyName: "Office 365",
-    imgSource: "svg/office365.png",
+    imgSource: "svg/Office.png",
   },
   {
     id: 5,
@@ -41,7 +41,7 @@ const result: ITechnology[] = [
   {
     id: 6,
     technologyName: "Matlab",
-    imgSource: "svg/matlab.png",
+    imgSource: "svg/Matlab.png",
   },
   {
     id: 7,
@@ -56,7 +56,7 @@ const result: ITechnology[] = [
   {
     id: 9,
     technologyName: "Ansys",
-    imgSource: "svg/ansys.png",
+    imgSource: "svg/ANSYS.png",
   },
   {
     id: 10,
@@ -65,8 +65,8 @@ const result: ITechnology[] = [
   },
   {
     id: 11,
-    technologyName: "Simulink",
-    imgSource: "svg/simulink.png",
+    technologyName: "Adams Car",
+    imgSource: "svg/MSC.png",
   },
 ];
 

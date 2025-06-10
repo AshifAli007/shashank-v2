@@ -434,7 +434,7 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
+                  <img src="svg/final1.png" alt="alexxandria model" />
                   <img src="svg/final2.jpg" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
@@ -470,8 +470,8 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
+                  <img src="svg/wishbone.png" alt="alexxandria model" />
+                  <img src="svg/wishbone2.png" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -500,8 +500,8 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
+                  <img src="svg/handle.png" alt="alexxandria model" />
+                  <img src="svg/furrow.png" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -532,8 +532,8 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
+                  <img src="svg/hub.png" alt="alexxandria model" />
+                  <img src="svg/upright.png" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -568,8 +568,8 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
+                  <img src="svg/panel1.png" alt="alexxandria model" />
+                  <img src="svg/panel2.png" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -598,8 +598,8 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
+                  <img src="svg/ball.png" alt="alexxandria model" />
+                  <img src="svg/ball2.png" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -630,8 +630,8 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
+                  <img src="svg/drone1.jpg" alt="alexxandria model" />
+                  <img src="svg/drone2.jpg" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -641,11 +641,11 @@ const index: React.FC<indexProps> = () => {
                     data-scroll-class="alexxandria-anim"
                     className="heading-2"
                   >
-                    Ball on Plate
-                    <br /> Control System
+                    Design and Fabrication 
+                    <br /> of a Surveillance Drone
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
-                    Simulated a closed-loop control system to balance a ball on a flat plate using MATLAB. Implemented a PD controller for real-time stabilization in two axes. The system successfully restored ball position from a 10 cm displacement in under 1 second and maintained steady tracking within ±1 cm, even under added random disturbances.
+                   Designed and fabricated a surveillance drone using Arduino as the flight controller and MPU6050 for attitude stabilization. Integrated a wireless camera for real-time aerial monitoring. Initial prototype used an aluminum frame, later replaced by carbon fiber for improved flight endurance. Upgraded the control system to KK2.1.5 for smoother flight control. Successfully achieved stable autonomous flight and video transmission.
                   </p>
 
                 </div>
@@ -661,10 +661,10 @@ const index: React.FC<indexProps> = () => {
           >
             <div className="section-reviews__top">
               <h1 className="heading-1">
-                <span>Technologies  <small>🚀</small></span>
+                <span>Software Expertise  <small>🚀</small></span>
               </h1>
               <p className="paragraph" style={{ fontSize: '2rem' }}>
-                What Technologies I Used
+                
               </p>
             </div>
             <div className="section-reviews__bottom">
@@ -715,18 +715,11 @@ const index: React.FC<indexProps> = () => {
             <p className="paragraph">Connect with me online</p>
             <div className="section-socials--links">
               <a
-                href="https://github.com/adeolaadeoti"
+                href="https://github.com/sc23bl"
                 rel="noopener"
                 target="_blank"
               >
                 👾 GitHub
-              </a>
-              <a
-                href="https://twitter.com/adeolajs"
-                rel="noopener"
-                target="_blank"
-              >
-                🐦 Twitter
               </a>
               <a
                 href="https://www.linkedin.com/in/shashch99"
