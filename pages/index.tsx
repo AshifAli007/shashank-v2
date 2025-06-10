@@ -387,7 +387,7 @@ const index: React.FC<indexProps> = () => {
                     <br /> Baja 2018
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
-                     Spearheaded prototyping for a BAJA SAE vehicle focusing on chassis and powertrain systems. Used modular fabrication for rapid iteration, calculated CVT torque-speed match and optimized gear ratios. Achieved 20% drivetrain efficiency increase, 12 kg weight reduction, and became first team from my college to complete endurance event.
+                    Spearheaded prototyping for a BAJA SAE vehicle focusing on chassis and powertrain systems. Used modular fabrication for rapid iteration, calculated CVT torque-speed match and optimized gear ratios. Achieved 20% drivetrain efficiency increase, 12 kg weight reduction, and became first team from my college to complete endurance event.
                   </p>
 
                 </div>
@@ -419,7 +419,7 @@ const index: React.FC<indexProps> = () => {
                     <br /> DESIGN
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
-                    Created a 15-inch alloy wheel rim for a Formula SAE vehicle by accurately modeling from real-world specs in SolidWorks, incorporating bolt patterns, ventilation, and offsets. Performed stress and fatigue analysis using ANSYS, achieving safety factors >1.5 and dimensional tolerance under 0.5 mm for simulation and assembly clearance.
+                    Created a 15-inch alloy wheel rim for a Formula SAE vehicle by accurately modeling from real-world specs in SolidWorks, incorporating bolt patterns, ventilation, and offsets. Performed stress and fatigue analysis using ANSYS, achieving safety factors 1.5 and dimensional tolerance under 0.5 mm for simulation and assembly clearance.
                   </p>
 
                 </div>
@@ -449,7 +449,7 @@ const index: React.FC<indexProps> = () => {
                     <br /> Design
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
-                     Designed and analyzed a low-cost, manually operated seeding mechanism to optimize seed spacing and reduce labor requirements for small-scale farms in rural India. Modeled a rotating-disc seed metering system in SolidWorks for uniform seed delivery with minimal clogging, tailored for crops like maize and mustard. Performed static structural analysis to ensure frame strength under soil resistance and operator load, validating a safety factor above 2.5. A complete CAD assembly with manufacturing drawings was prepared, though fabrication was halted due to COVID-related restrictions.
+                    Designed and analyzed a low-cost, manually operated seeding mechanism to optimize seed spacing and reduce labor requirements for small-scale farms in rural India. Modeled a rotating-disc seed metering system in SolidWorks for uniform seed delivery with minimal clogging, tailored for crops like maize and mustard. Performed static structural analysis to ensure frame strength under soil resistance and operator load, validating a safety factor above 2.5. A complete CAD assembly with manufacturing drawings was prepared, though fabrication was halted due to COVID-related restrictions.
                   </p>
                 </div>
               </div>
@@ -485,7 +485,7 @@ const index: React.FC<indexProps> = () => {
                     <br /> Suspension Design
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
-                   Engineered a high-performance double wishbone suspension system for a formula-style race car using Creo and ADAMS Car. Tuned critical geometric parameters like track width, camber gain, and roll center height. Simulations showed a 12% reduction in body roll and improved tire contact consistency by 15%, with less than 1.5 mm bump steer—resulting in a digitally validated suspension model ready for prototyping.
+                    Engineered a high-performance double wishbone suspension system for a formula-style race car using Creo and ADAMS Car. Tuned critical geometric parameters like track width, camber gain, and roll center height. Simulations showed a 12% reduction in body roll and improved tire contact consistency by 15%, with less than 1.5 mm bump steer—resulting in a digitally validated suspension model ready for prototyping.
                   </p>
 
                 </div>
@@ -514,8 +514,8 @@ const index: React.FC<indexProps> = () => {
                     Handle & Furrow
                     <br /> Statics Load Analysis
                   </h2>
-                  <p style={{ color: 'white',textAlign: 'justify' }}>
-                   Conducted structural analysis on a manually operated furrow blade and handle system for agricultural use. Designed the model in SolidWorks with realistic pulling and soil resistance loads (~300 N pull and 150 N soil contact). Static simulation yielded a minimum safety factor of 2.4. Refined the blade tip geometry to reduce peak stress by 18%, ensuring long-term usability under field conditions.
+                  <p style={{ color: 'white', textAlign: 'justify' }}>
+                    Conducted structural analysis on a manually operated furrow blade and handle system for agricultural use. Designed the model in SolidWorks with realistic pulling and soil resistance loads (~300 N pull and 150 N soil contact). Static simulation yielded a minimum safety factor of 2.4. Refined the blade tip geometry to reduce peak stress by 18%, ensuring long-term usability under field conditions.
                   </p>
 
                 </div>
@@ -547,7 +547,7 @@ const index: React.FC<indexProps> = () => {
                     <br /> Static Load Analysis
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
-                   Performed static structural analysis of the front wheel hub and upright assemblies for an FSAE vehicle using CATIA V5 and SolidWorks Simulation. Applied racing boundary conditions such as 2g cornering, 1.5g braking, and 1000 N vertical loads. Verified safety through Von Mises stress distribution and ensured structural integrity with a factor of safety of 2.1. The final design was cleared for CNC machining and integration into the suspension system.
+                    Performed static structural analysis of the front wheel hub and upright assemblies for an FSAE vehicle using CATIA V5 and SolidWorks Simulation. Applied racing boundary conditions such as 2g cornering, 1.5g braking, and 1000 N vertical loads. Verified safety through Von Mises stress distribution and ensured structural integrity with a factor of safety of 2.1. The final design was cleared for CNC machining and integration into the suspension system.
                   </p>
 
                 </div>
@@ -583,7 +583,7 @@ const index: React.FC<indexProps> = () => {
                     <br /> of a Solar Panel
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
-                   Developed and simulated an optimal control system for a dual-axis solar tracker in MATLAB. Modeled the tracker as a nonlinear second-order plant and applied optimal feedback control to align panel angles with solar trajectory. Improved simulated solar energy capture by 32% over static panels while maintaining robustness to actuator delays and cloud-induced disturbances.
+                    Developed and simulated an optimal control system for a dual-axis solar tracker in MATLAB. Modeled the tracker as a nonlinear second-order plant and applied optimal feedback control to align panel angles with solar trajectory. Improved simulated solar energy capture by 32% over static panels while maintaining robustness to actuator delays and cloud-induced disturbances.
                   </p>
 
                 </div>
@@ -612,8 +612,8 @@ const index: React.FC<indexProps> = () => {
                     Ball on Plate
                     <br /> Control System
                   </h2>
-                  <p style={{ color: 'white' , textAlign: 'justify' }}>
-                     Simulated a closed-loop control system to balance a ball on a flat plate using MATLAB. Implemented a PD controller for real-time stabilization in two axes. The system successfully restored ball position from a 10 cm displacement in under 1 second and maintained steady tracking within ±1 cm, even under added random disturbances.
+                  <p style={{ color: 'white', textAlign: 'justify' }}>
+                    Simulated a closed-loop control system to balance a ball on a flat plate using MATLAB. Implemented a PD controller for real-time stabilization in two axes. The system successfully restored ball position from a 10 cm displacement in under 1 second and maintained steady tracking within ±1 cm, even under added random disturbances.
                   </p>
 
                 </div>
