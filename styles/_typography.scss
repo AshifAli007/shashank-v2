@@ -5,12 +5,15 @@
     font-size: 5rem;
     letter-spacing: -0.03em;
     font-family: $font-secondary;
+
     @media only screen and (max-width: 56.25em) {
       font-size: 4.25rem;
     }
+
     @media only screen and (max-width: 37.5em) {
       font-size: 3.5rem;
     }
+
     span {
       margin-right: 1rem;
       background-image: linear-gradient(to right, #b0f3f1, #ffcfdf);
@@ -19,28 +22,31 @@
       -webkit-text-fill-color: transparent;
       display: inline-block;
     }
+
     &__sub {
       span {
-        background-image: linear-gradient(
-          to right,
-          var(--color-white),
-          var(--color-white)
-        );
+        background-image: linear-gradient(to right,
+            var(--color-white),
+            var(--color-white));
       }
     }
   }
+
   &-2 {
-    font-size: 4.2rem;
+    font-size: 3rem;
     line-height: 105%;
     letter-spacing: -0.03em;
     color: var(--color-white);
     font-family: $font-secondary;
+
     @media only screen and (max-width: 57em) {
       line-height: 125%;
     }
+
     @media only screen and (max-width: 56.25em) {
       font-size: 3.5rem;
     }
+
     // @media only screen and (max-width: 37.5em) {
     //   font-size: 3.5rem;
     // }
@@ -48,13 +54,11 @@
 }
 
 .alexxandria-anim {
-  background: linear-gradient(
-    -45deg,
-    #63898a,
-    #9fbcbf,
-    var(--color-white),
-    var(--color-white)
-  );
+  background: linear-gradient(-45deg,
+      #63898a,
+      #9fbcbf,
+      var(--color-white),
+      var(--color-white));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -68,13 +72,11 @@
 }
 
 .safarika-anim {
-  background: linear-gradient(
-    -45deg,
-    #fbb034,
-    #ffdd00,
-    var(--color-white),
-    var(--color-white)
-  );
+  background: linear-gradient(-45deg,
+      #fbb034,
+      #ffdd00,
+      var(--color-white),
+      var(--color-white));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84,13 +86,11 @@
 }
 
 .heatrow-anim {
-  background: linear-gradient(
-    -45deg,
-    #045de9,
-    #09c6f9,
-    var(--color-white),
-    var(--color-white)
-  );
+  background: linear-gradient(-45deg,
+      #045de9,
+      #09c6f9,
+      var(--color-white),
+      var(--color-white));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -99,13 +99,11 @@
 }
 
 .adeola-anim {
-  background: linear-gradient(
-    -45deg,
-    var(--color-light-blue),
-    var(--color-light-purple),
-    var(--color-white),
-    var(--color-white)
-  );
+  background: linear-gradient(-45deg,
+      var(--color-light-blue),
+      var(--color-light-purple),
+      var(--color-white),
+      var(--color-white));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -125,6 +123,7 @@
   @media only screen and (max-width: 56.25em) {
     grid-column: 1/15;
     padding: 0 4rem;
+
     br {
       display: none;
     }
@@ -144,9 +143,13 @@
 
 .heading-1 {
   margin: 5rem 0;
-  display: flex; /* Use flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  text-align: center; /* Ensure the text is centered */
+  display: flex;
+  /* Use flexbox for centering */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+  /* Ensure the text is centered */
   flex-flow: column;
 }

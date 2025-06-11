@@ -354,7 +354,7 @@ const index: React.FC<indexProps> = () => {
                     className="heading-2"
                   >
                     Formula
-                    <br /> SAE 2019
+                    SAE 2019
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
                     Designed and fabricated a single-seat formula race car under SAEINDIA regulations, serving as core design engineer for steering, rims, chassis, and seat components using SolidWorks and CATIA with GD&T. Successfully passed technical inspections and raced at BIC, ranking 36th nationally. Applied FEA to reduce weight by 83 kg.
@@ -384,7 +384,7 @@ const index: React.FC<indexProps> = () => {
                     className="heading-2"
                   >
                     SAE
-                    <br /> Baja 2018
+                    Baja 2018
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
                     Spearheaded prototyping for a BAJA SAE vehicle focusing on chassis and powertrain systems. Used modular fabrication for rapid iteration, calculated CVT torque-speed match and optimized gear ratios. Achieved 20% drivetrain efficiency increase, 12 kg weight reduction, and became first team from my college to complete endurance event.
@@ -392,8 +392,6 @@ const index: React.FC<indexProps> = () => {
 
                 </div>
               </div>
-            </div>
-            <div className="Robotics-projects">
               <div className="project-card">
                 <div className="project-card__left">
                   <h4 className="heading-4">
@@ -416,7 +414,7 @@ const index: React.FC<indexProps> = () => {
                     className="heading-2"
                   >
                     Wheel Rim
-                    <br /> DESIGN
+                    DESIGN
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
                     Created a 15-inch alloy wheel rim for a Formula SAE vehicle by accurately modeling from real-world specs in SolidWorks, incorporating bolt patterns, ventilation, and offsets. Performed stress and fatigue analysis using ANSYS, achieving safety factors 1.5 and dimensional tolerance under 0.5 mm for simulation and assembly clearance.
@@ -446,7 +444,7 @@ const index: React.FC<indexProps> = () => {
                     className="heading-2"
                   >
                     Seeding Mechanism
-                    <br /> Design
+                    Design
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
                     Designed and analyzed a low-cost, manually operated seeding mechanism to optimize seed spacing and reduce labor requirements for small-scale farms in rural India. Modeled a rotating-disc seed metering system in SolidWorks for uniform seed delivery with minimal clogging, tailored for crops like maize and mustard. Performed static structural analysis to ensure frame strength under soil resistance and operator load, validating a safety factor above 2.5. A complete CAD assembly with manufacturing drawings was prepared, though fabrication was halted due to COVID-related restrictions.
@@ -454,11 +452,10 @@ const index: React.FC<indexProps> = () => {
                 </div>
               </div>
             </div>
-
             <h1 className="heading-1">
-
               <div><span>Analysis </span> <small>🚁</small></div>
             </h1>
+
             <div className="Robotics-projects">
               <div className="project-card">
                 <div className="project-card__left">
@@ -482,7 +479,7 @@ const index: React.FC<indexProps> = () => {
                     className="heading-2"
                   >
                     Double Wishbone
-                    <br /> Suspension Design
+                    Suspension Design
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
                     Engineered a high-performance double wishbone suspension system for a formula-style race car using Creo and ADAMS Car. Tuned critical geometric parameters like track width, camber gain, and roll center height. Simulations showed a 12% reduction in body roll and improved tire contact consistency by 15%, with less than 1.5 mm bump steer—resulting in a digitally validated suspension model ready for prototyping.
@@ -512,7 +509,7 @@ const index: React.FC<indexProps> = () => {
                     className="heading-2"
                   >
                     Handle & Furrow
-                    <br /> Statics Load Analysis
+                    Statics Load Analysis
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
                     Conducted structural analysis on a manually operated furrow blade and handle system for agricultural use. Designed the model in SolidWorks with realistic pulling and soil resistance loads (~300 N pull and 150 N soil contact). Static simulation yielded a minimum safety factor of 2.4. Refined the blade tip geometry to reduce peak stress by 18%, ensuring long-term usability under field conditions.
@@ -520,8 +517,6 @@ const index: React.FC<indexProps> = () => {
 
                 </div>
               </div>
-            </div>
-            <div className="Robotics-projects">
               <div className="project-card">
                 <div className="project-card__left">
                   <h4 className="heading-4">
@@ -544,7 +539,7 @@ const index: React.FC<indexProps> = () => {
                     className="heading-2"
                   >
                     Wheel Hub & Upright
-                    <br /> Static Load Analysis
+                    Static Load Analysis
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
                     Performed static structural analysis of the front wheel hub and upright assemblies for an FSAE vehicle using CATIA V5 and SolidWorks Simulation. Applied racing boundary conditions such as 2g cornering, 1.5g braking, and 1000 N vertical loads. Verified safety through Von Mises stress distribution and ensured structural integrity with a factor of safety of 2.1. The final design was cleared for CNC machining and integration into the suspension system.
@@ -553,6 +548,7 @@ const index: React.FC<indexProps> = () => {
                 </div>
               </div>
             </div>
+
             <h1 className="heading-1">
 
               <div><span>Robotics </span> <small>🛰️</small></div>
@@ -618,8 +614,6 @@ const index: React.FC<indexProps> = () => {
 
                 </div>
               </div>
-            </div>
-            <div className="Robotics-projects">
               <div className="project-card">
                 <div className="project-card__left">
                   <h4 className="heading-4">
@@ -641,11 +635,11 @@ const index: React.FC<indexProps> = () => {
                     data-scroll-class="alexxandria-anim"
                     className="heading-2"
                   >
-                    Design and Fabrication 
+                    Design and Fabrication
                     <br /> of a Surveillance Drone
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
-                   Designed and fabricated a surveillance drone using Arduino as the flight controller and MPU6050 for attitude stabilization. Integrated a wireless camera for real-time aerial monitoring. Initial prototype used an aluminum frame, later replaced by carbon fiber for improved flight endurance. Upgraded the control system to KK2.1.5 for smoother flight control. Successfully achieved stable autonomous flight and video transmission.
+                    Designed and fabricated a surveillance drone using Arduino as the flight controller and MPU6050 for attitude stabilization. Integrated a wireless camera for real-time aerial monitoring. Initial prototype used an aluminum frame, later replaced by carbon fiber for improved flight endurance. Upgraded the control system to KK2.1.5 for smoother flight control. Successfully achieved stable autonomous flight and video transmission.
                   </p>
 
                 </div>
@@ -664,7 +658,7 @@ const index: React.FC<indexProps> = () => {
                 <span>Software Expertise  <small>🚀</small></span>
               </h1>
               <p className="paragraph" style={{ fontSize: '2rem' }}>
-                
+
               </p>
             </div>
             <div className="section-reviews__bottom">
