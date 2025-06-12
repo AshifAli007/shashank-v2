@@ -147,8 +147,9 @@ export const MobileNavigation = ({ variants, isOpen }: any) => {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "140px 1fr",
+              gridTemplateColumns: "auto 1fr",
               gap: "1.5rem",
+              rowGap: "0rem",
               alignItems: "start",
             }}
           >
@@ -223,8 +224,9 @@ export const MobileNavigation = ({ variants, isOpen }: any) => {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "140px 1fr",
+              gridTemplateColumns: "auto 1fr",
               gap: "1.5rem",
+              rowGap: "0rem",
               alignItems: "start",
             }}
           >

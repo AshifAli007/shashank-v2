@@ -32,18 +32,21 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       img {
         &:nth-child(2) {
           margin-left: 2rem;
         }
       }
     }
+
     .toggle-button-wrapper {
       cursor: pointer;
       @include centerContent;
       color: var(--color-gray);
       font-family: $font-tertiary;
       font-size: 2rem;
+
       @media only screen and (max-width: 40em) {
         span {
           display: none;
@@ -65,8 +68,10 @@
     overflow: hidden;
     margin-left: 1rem;
   }
+
   &__text {
     animation: logoLeftAnim 15s cubic-bezier(1, 0, 0, 1) infinite;
+
     @media only screen and (max-width: 40em) {
       // display: none;
     }
@@ -103,16 +108,19 @@
     margin-left: 6rem;
     align-items: flex-start;
   }
+
   &__left {
     text-align: inherit;
 
     @media only screen and (max-width: 57em) {
       margin-bottom: 10rem;
     }
+
     &--links {
       width: 30rem;
       @include centerContent;
       margin-top: 4rem;
+
       a {
         color: var(--color-light-blue);
         text-decoration: none;
@@ -123,14 +131,17 @@
         font-size: 3rem;
         font-weight: 100;
         transition: all 0.3s ease-in-out;
+
         &:hover {
           color: var(--color-white);
         }
       }
     }
   }
+
   &__right {
     text-align: inherit;
+
     a {
       font-size: 5rem;
       letter-spacing: -0.03em;
@@ -140,6 +151,7 @@
       text-decoration: none;
       color: var(--color-white);
       transition: all 0.3s ease-in-out;
+
       &:hover {
         color: var(--color-light-purple);
       }
@@ -159,6 +171,7 @@
   &__projects {
     margin-top: 10rem;
     @include centerContent;
+
     &-card {
       width: 38.5rem;
       height: 28.8rem;
@@ -177,10 +190,12 @@
       &:hover {
         width: 41.5rem;
         height: 31.8rem;
+
         img {
           opacity: 0.5;
         }
       }
+
       img {
         border-radius: 4.5rem;
         height: 100%;
@@ -213,57 +228,58 @@
   font-weight: 500;
   color: whitesmoke;
   border-right: 2px solid #bbb;
-  padding-right: 1.5rem;
+  padding-right: 2.5rem;
   text-align: right;
   min-height: 100%;
+  white-space: nowrap;
 }
 
 
-.navigation-bottom{
+.navigation-bottom {
   .profile-header {
-  width: 100%;
-  margin-bottom: 4rem;
+    width: 100%;
+    margin-bottom: 4rem;
 
-  &__name {
-    // font-family: $font-primary;
-    // font-size: 4rem;
-    // font-weight: 400;
-    margin-bottom: 2.5rem;
-    margin-top: 0;
-    letter-spacing: 0.01em;
-  }
+    &__name {
+      // font-family: $font-primary;
+      // font-size: 4rem;
+      // font-weight: 400;
+      margin-bottom: 2.5rem;
+      margin-top: 0;
+      letter-spacing: 0.01em;
+    }
 
-  &__info {
-    // font-family: $font-primary;
-    // font-size: 2rem;
-    margin-bottom: 2.5rem;
-    color: whitesmoke;
-  }
+    &__info {
+      // font-family: $font-primary;
+      // font-size: 2rem;
+      margin-bottom: 2.5rem;
+      color: whitesmoke;
+    }
 
-  &__line {
-    border: none;
-    border-top: 2px solid whitesmoke;
-    width: 50%;
-    margin: 2.5rem 0 0 0;
-  }
+    &__line {
+      border: none;
+      border-top: 2px solid whitesmoke;
+      width: 50%;
+      margin: 2.5rem 0 0 0;
+    }
 
-  &__resume-btn {
-    display: inline-block;
-    background: whitesmoke;
-    color: black;
-    font-family: $font-secondary;
-    padding: 1rem 1rem;
-    text-align: center;
-    border: none;
-    border-radius: 0;
-    text-decoration: none;
-    transition: background 0.2s;
-    position: relative;
-    bottom: 5rem;
+    &__resume-btn {
+      display: inline-block;
+      background: whitesmoke;
+      color: black;
+      font-family: $font-secondary;
+      padding: 1rem 1rem;
+      text-align: center;
+      border: none;
+      border-radius: 0;
+      text-decoration: none;
+      transition: background 0.2s;
+      position: relative;
+      bottom: 5rem;
 
-    &:hover {
-      background: #77bdb8;
+      &:hover {
+        background: #77bdb8;
+      }
     }
   }
-}
 }
