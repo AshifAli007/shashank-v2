@@ -98,6 +98,121 @@ const index: React.FC<indexProps> = () => {
     ]);
   }, []);
 
+  const projectSections = [
+    {
+      key: "design",
+      heading: "Design",
+      tag: "dY�_",
+      intro: "Each project is unique. Here are some of my works.",
+      projects: [
+        {
+          title: "Formula\nSAE 2019",
+          description:
+            "Designed and fabricated a single-seat formula race car under SAEINDIA regulations, serving as core design engineer for steering, rims, chassis, and seat components using SolidWorks and CATIA with GD&T. Successfully passed technical inspections and raced at BIC, ranking 36th nationally. Applied FEA to reduce weight by 83 kg.",
+          images: [
+            { src: "svg/supra1.png", alt: "Formula SAE render" },
+            { src: "svg/supra2.png", alt: "Formula SAE in pit" },
+          ],
+          skills: ["SOLIDWORKS", "LOTUS", "ADAMS CAR", "ANSYS"],
+        },
+        {
+          title: "SAE\nBaja 2018",
+          description:
+            "Spearheaded prototyping for a BAJA SAE vehicle focusing on chassis and powertrain systems. Used modular fabrication for rapid iteration, calculated CVT torque-speed match and optimised gear ratios. Achieved 20% drivetrain efficiency increase, 12 kg weight reduction, and became the first team from my college to complete the endurance event.",
+          images: [
+            { src: "svg/baja1.png", alt: "Baja SAE vehicle CAD" },
+            { src: "svg/baja2.jpg", alt: "Baja SAE vehicle prototype" },
+          ],
+          skills: ["SOLIDWORKS", "LOTUS", "ADAMS CAR", "ANSYS"],
+        },
+        {
+          title: "Wheel Rim\nDESIGN",
+          description:
+            "Created a 15-inch alloy wheel rim for a Formula SAE vehicle by accurately modelling from real-world specs in SolidWorks, incorporating bolt patterns, ventilation, and offsets. Performed stress and fatigue analysis using ANSYS, achieving safety factors greater than 1.5 and dimensional tolerance under 0.5 mm for simulation and assembly clearance.",
+          images: [
+            { src: "svg/Rim1.png", alt: "FSAE wheel rim CAD" },
+            { src: "svg/Rim2.png", alt: "FSAE wheel rim render" },
+          ],
+          skills: ["SOLIDWORKS", "LOTUS", "ADAMS CAR", "ANSYS"],
+        },
+        {
+          title: "Seeding Mechanism\nDesign",
+          description:
+            "Designed and analysed a low-cost, manually operated seeding mechanism to optimise seed spacing and reduce labour requirements for small-scale farms in rural India. Modelled a rotating-disc seed metering system in SolidWorks for uniform seed delivery with minimal clogging. Performed static structural analysis to validate a safety factor above 2.5.",
+          images: [
+            { src: "svg/supra1.png", alt: "Seeding mechanism CAD" },
+            { src: "svg/final2.jpg", alt: "Seeding mechanism render" },
+          ],
+          skills: ["SOLIDWORKS", "ANSYS"],
+        },
+      ],
+    },
+    {
+      key: "analysis",
+      heading: "Analysis",
+      tag: "dYs?",
+      projects: [
+        {
+          title: "Double Wishbone\nSuspension Design",
+          description:
+            "Engineered a high-performance double wishbone suspension system for a formula-style race car using Creo and ADAMS Car. Tuned track width, camber gain, and roll centre height. Simulations showed a 12% reduction in body roll and improved tyre contact consistency by 15%, with less than 1.5 mm bump steer - resulting in a digitally validated suspension model ready for prototyping.",
+          images: [
+            { src: "svg/supra1.png", alt: "Double wishbone suspension CAD" },
+            { src: "svg/supra2.png", alt: "Double wishbone suspension analysis" },
+          ],
+          skills: ["CREO", "ADAMS CAR"],
+        },
+        {
+          title: "Handle & Furrow\nStatics Load Analysis",
+          description:
+            "Conducted structural analysis on a manually operated furrow blade and handle system for agricultural use. Designed the model in SolidWorks with realistic pulling and soil resistance loads (~300 N pull and ~150 N soil contact). Static simulation yielded a minimum safety factor of 2.4, and refining the blade tip geometry reduced peak stress by 18% for long-term durability.",
+          images: [
+            { src: "svg/supra1.png", alt: "Furrow handle assembly CAD" },
+            { src: "svg/supra2.png", alt: "Furrow handle FEA plot" },
+          ],
+          skills: ["SOLIDWORKS", "ANSYS"],
+        },
+        {
+          title: "Wheel Hub & Upright\nStatic Load Analysis",
+          description:
+            "Performed static structural analysis of the front wheel hub and upright assemblies for an FSAE vehicle using CATIA V5 and SOLIDWORKS Simulation. Applied racing boundary conditions such as 2g cornering, 1.5g braking, and 1000 N vertical loads. Verified safety through Von Mises stress distribution and ensured structural integrity with a factor of safety of 2.1 ready for CNC machining.",
+          images: [
+            { src: "svg/supra1.png", alt: "Wheel hub and upright CAD" },
+            { src: "svg/supra2.png", alt: "Wheel hub FEA results" },
+          ],
+          skills: ["CATIA V5", "SOLIDWORKS", "ANSYS"],
+        },
+      ],
+    },
+    {
+      key: "robotics",
+      heading: "Robotics",
+      tag: "dY>��,?",
+      projects: [
+        {
+          title: "Optimal Control\nof a Solar Panel",
+          description:
+            "Developed and simulated an optimal control system for a dual-axis solar tracker in MATLAB. Modelled the tracker as a nonlinear second-order plant and applied optimal feedback control to align panel angles with the solar trajectory. Improved simulated solar energy capture by 32% over static panels while remaining robust to actuator delays and cloud-induced disturbances.",
+          images: [
+            { src: "svg/supra1.png", alt: "Solar tracker simulation visual" },
+            { src: "svg/supra2.png", alt: "Solar tracker hardware concept" },
+          ],
+          skills: ["MATLAB", "SIMULINK", "C/C++"],
+        },
+        {
+          title: "Ball on Plate\nControl System",
+          description:
+            "Simulated a closed-loop control system to balance a ball on a flat plate using MATLAB. Implemented a PD controller for real-time stabilisation in two axes. The system restored ball position from a 10 cm displacement in under 1 second and maintained steady tracking within +/-1 cm even under random disturbances.",
+          images: [
+            { src: "svg/supra1.png", alt: "Ball on plate simulation" },
+            { src: "svg/supra2.png", alt: "Ball on plate control hardware" },
+          ],
+          skills: ["MATLAB", "SIMULINK", "C/C++", "LATEX"],
+        },
+      ],
+    },
+  ];
+
   const handleSpeaker = () => {
     const audio = document.querySelector("#audioPlayer") as HTMLVideoElement;
 
@@ -322,335 +437,65 @@ const index: React.FC<indexProps> = () => {
             <br /> developing intelligent solutions that optimize performance,
             enhance user experience, and drive sustainable innovation.
           </p>
-          <section id="sectionProjects" className="section-projects">
-            <h1 className="heading-1">
-              <div><span>Design </span> <small>🦾</small></div>
+                    <section id="sectionProjects" className="section-projects">
+            {projectSections.map((section) => (
+              <div className="project-section" key={section.key}>
+                <h1 className="heading-1">
+                  <div>
+                    <span>{section.heading} </span>{" "}
+                    {section.tag && <small>{section.tag}</small>}
+                  </div>
+                  {section.intro && (
+                    <p className="paragraph">{section.intro}</p>
+                  )}
+                </h1>
 
-              <p className="paragraph">
-                Each project is unique. Here are some of my works.
-              </p>
-            </h1>
-
-            <div className="Robotics-projects">
-              <div className="project-card">
-                <div className="project-card__left">
-                  <h4 className="heading-4">
-                    SOLIDWORKS, LOTUS, ADAMS CAR, ANSYS
-                  </h4>
-                </div>
-                <div
-                  className="project-card__middle"
-                  data-displacement="webp/myDistorsionImage.webp"
-                >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
-                </div>
-                <div className="project-card__right">
-                  <h2
-                    data-scroll
-                    data-scroll-offset="35%"
-                    data-scroll-repeat={true}
-                    data-scroll-class="alexxandria-anim"
-                    className="heading-2"
-                  >
-                    Formula
-                    <br /> SAE 2019
-                  </h2>
-                  <p style={{ color: 'white', textAlign: 'justify' }}>
-                    Designed and fabricated a single-seat formula race car under SAEINDIA regulations, serving as core design engineer for steering, rims, chassis, and seat components using SolidWorks and CATIA with GD&T. Successfully passed technical inspections and raced at BIC, ranking 36th nationally. Applied FEA to reduce weight by 83 kg.
-                  </p>
-
+                <div className="Robotics-projects">
+                  {section.projects.map((project) => (
+                    <div className="project-card" key={project.title}>
+                      <div className="project-card__header">
+                        <h2
+                          data-scroll
+                          data-scroll-offset="35%"
+                          data-scroll-repeat={true}
+                          data-scroll-class="alexxandria-anim"
+                          className="heading-2"
+                        >
+                          {project.title.split("\n").map((line, index, arr) => (
+                            <React.Fragment key={`${project.title}-${index}`}>
+                              {line}
+                              {index < arr.length - 1 && <br />}
+                            </React.Fragment>
+                          ))}
+                        </h2>
+                      </div>
+                      <div
+                        className="project-card__middle"
+                        data-displacement="webp/myDistorsionImage.webp"
+                      >
+                        {project.images.map((image, index) => (
+                          <img
+                            key={`${project.title}-image-${index}`}
+                            src={image.src}
+                            alt={image.alt}
+                          />
+                        ))}
+                      </div>
+                      <div className="project-card__body">
+                        <p>{project.description}</p>
+                      </div>
+                      {project.skills && project.skills.length > 0 && (
+                        <div className="project-card__skills">
+                          {project.skills.map((skill) => (
+                            <span key={`${project.title}-${skill}`}>{skill}</span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
                 </div>
               </div>
-              <div className="project-card">
-                <div className="project-card__left">
-                  <h4 className="heading-4">
-                    SOLIDWORKS, LOTUS, ADAMS CAR, ANSYS
-                  </h4>
-                </div>
-                <div
-                  className="project-card__middle"
-                  data-displacement="webp/myDistorsionImage.webp"
-                >
-                  <img src="svg/baja1.png" alt="alexxandria model" />
-                  <img src="svg/baja2.jpg" alt="alexxandria logo" />
-                </div>
-                <div className="project-card__right">
-                  <h2
-                    data-scroll
-                    data-scroll-offset="35%"
-                    data-scroll-repeat={true}
-                    data-scroll-class="alexxandria-anim"
-                    className="heading-2"
-                  >
-                    SAE
-                    <br /> Baja 2018
-                  </h2>
-                  <p style={{ color: 'white', textAlign: 'justify' }}>
-                     Spearheaded prototyping for a BAJA SAE vehicle focusing on chassis and powertrain systems. Used modular fabrication for rapid iteration, calculated CVT torque-speed match and optimized gear ratios. Achieved 20% drivetrain efficiency increase, 12 kg weight reduction, and became first team from my college to complete endurance event.
-                  </p>
-
-                </div>
-              </div>
-            </div>
-            <div className="Robotics-projects">
-              <div className="project-card">
-                <div className="project-card__left">
-                  <h4 className="heading-4">
-                    SOLIDWORKS, LOTUS, ADAMS CAR, ANSYS
-                  </h4>
-                </div>
-                <div
-                  className="project-card__middle"
-                  data-displacement="webp/myDistorsionImage.webp"
-                >
-                  <img src="svg/Rim1.png" alt="alexxandria model" />
-                  <img src="svg/Rim2.png" alt="alexxandria logo" />
-                </div>
-                <div className="project-card__right">
-                  <h2
-                    data-scroll
-                    data-scroll-offset="35%"
-                    data-scroll-repeat={true}
-                    data-scroll-class="alexxandria-anim"
-                    className="heading-2"
-                  >
-                    Wheel Rim
-                    <br /> DESIGN
-                  </h2>
-                  <p style={{ color: 'white', textAlign: 'justify' }}>
-                    Created a 15-inch alloy wheel rim for a Formula SAE vehicle by accurately modeling from real-world specs in SolidWorks, incorporating bolt patterns, ventilation, and offsets. Performed stress and fatigue analysis using ANSYS, achieving safety factors >1.5 and dimensional tolerance under 0.5 mm for simulation and assembly clearance.
-                  </p>
-
-                </div>
-              </div>
-              <div className="project-card">
-                <div className="project-card__left">
-                  <h4 className="heading-4">
-                    SOLIDWORKS, ANSYS
-                  </h4>
-                </div>
-                <div
-                  className="project-card__middle"
-                  data-displacement="webp/myDistorsionImage.webp"
-                >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/final2.jpg" alt="alexxandria logo" />
-                </div>
-                <div className="project-card__right">
-                  <h2
-                    data-scroll
-                    data-scroll-offset="35%"
-                    data-scroll-repeat={true}
-                    data-scroll-class="alexxandria-anim"
-                    className="heading-2"
-                  >
-                    Seeding Mechanism
-                    <br /> Design
-                  </h2>
-                  <p style={{ color: 'white', textAlign: 'justify' }}>
-                     Designed and analyzed a low-cost, manually operated seeding mechanism to optimize seed spacing and reduce labor requirements for small-scale farms in rural India. Modeled a rotating-disc seed metering system in SolidWorks for uniform seed delivery with minimal clogging, tailored for crops like maize and mustard. Performed static structural analysis to ensure frame strength under soil resistance and operator load, validating a safety factor above 2.5. A complete CAD assembly with manufacturing drawings was prepared, though fabrication was halted due to COVID-related restrictions.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <h1 className="heading-1">
-
-              <div><span>Analysis </span> <small>🚁</small></div>
-            </h1>
-            <div className="Robotics-projects">
-              <div className="project-card">
-                <div className="project-card__left">
-                  <h4 className="heading-4">
-                    CREO, ADAMS CAR
-                  </h4>
-                </div>
-                <div
-                  className="project-card__middle"
-                  data-displacement="webp/myDistorsionImage.webp"
-                >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
-                </div>
-                <div className="project-card__right">
-                  <h2
-                    data-scroll
-                    data-scroll-offset="35%"
-                    data-scroll-repeat={true}
-                    data-scroll-class="alexxandria-anim"
-                    className="heading-2"
-                  >
-                    Double Wishbone
-                    <br /> Suspension Design
-                  </h2>
-                  <p style={{ color: 'white', textAlign: 'justify' }}>
-                   Engineered a high-performance double wishbone suspension system for a formula-style race car using Creo and ADAMS Car. Tuned critical geometric parameters like track width, camber gain, and roll center height. Simulations showed a 12% reduction in body roll and improved tire contact consistency by 15%, with less than 1.5 mm bump steer—resulting in a digitally validated suspension model ready for prototyping.
-                  </p>
-
-                </div>
-              </div>
-              <div className="project-card">
-                <div className="project-card__left">
-                  <h4 className="heading-4">
-                    SOLIDWORKS, ANSYS
-                  </h4>
-                </div>
-                <div
-                  className="project-card__middle"
-                  data-displacement="webp/myDistorsionImage.webp"
-                >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
-                </div>
-                <div className="project-card__right">
-                  <h2
-                    data-scroll
-                    data-scroll-offset="35%"
-                    data-scroll-repeat={true}
-                    data-scroll-class="alexxandria-anim"
-                    className="heading-2"
-                  >
-                    Handle & Furrow
-                    <br /> Statics Load Analysis
-                  </h2>
-                  <p style={{ color: 'white',textAlign: 'justify' }}>
-                   Conducted structural analysis on a manually operated furrow blade and handle system for agricultural use. Designed the model in SolidWorks with realistic pulling and soil resistance loads (~300 N pull and 150 N soil contact). Static simulation yielded a minimum safety factor of 2.4. Refined the blade tip geometry to reduce peak stress by 18%, ensuring long-term usability under field conditions.
-                  </p>
-
-                </div>
-              </div>
-            </div>
-            <div className="Robotics-projects">
-              <div className="project-card">
-                <div className="project-card__left">
-                  <h4 className="heading-4">
-                    CATIA V5, SOLIDWORKS, ANSYS
-                  </h4>
-                </div>
-                <div
-                  className="project-card__middle"
-                  data-displacement="webp/myDistorsionImage.webp"
-                >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
-                </div>
-                <div className="project-card__right">
-                  <h2
-                    data-scroll
-                    data-scroll-offset="35%"
-                    data-scroll-repeat={true}
-                    data-scroll-class="alexxandria-anim"
-                    className="heading-2"
-                  >
-                    Wheel Hub & Upright
-                    <br /> Static Load Analysis
-                  </h2>
-                  <p style={{ color: 'white', textAlign: 'justify' }}>
-                   Performed static structural analysis of the front wheel hub and upright assemblies for an FSAE vehicle using CATIA V5 and SolidWorks Simulation. Applied racing boundary conditions such as 2g cornering, 1.5g braking, and 1000 N vertical loads. Verified safety through Von Mises stress distribution and ensured structural integrity with a factor of safety of 2.1. The final design was cleared for CNC machining and integration into the suspension system.
-                  </p>
-
-                </div>
-              </div>
-            </div>
-            <h1 className="heading-1">
-
-              <div><span>Robotics </span> <small>🛰️</small></div>
-            </h1>
-            <div className="Robotics-projects">
-              <div className="project-card">
-                <div className="project-card__left">
-                  <h4 className="heading-4">
-                    MATLAB, SIMULINK, C/C++
-                  </h4>
-                </div>
-                <div
-                  className="project-card__middle"
-                  data-displacement="webp/myDistorsionImage.webp"
-                >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
-                </div>
-                <div className="project-card__right">
-                  <h2
-                    data-scroll
-                    data-scroll-offset="35%"
-                    data-scroll-repeat={true}
-                    data-scroll-class="alexxandria-anim"
-                    className="heading-2"
-                  >
-                    Optimal Control
-                    <br /> of a Solar Panel
-                  </h2>
-                  <p style={{ color: 'white', textAlign: 'justify' }}>
-                   Developed and simulated an optimal control system for a dual-axis solar tracker in MATLAB. Modeled the tracker as a nonlinear second-order plant and applied optimal feedback control to align panel angles with solar trajectory. Improved simulated solar energy capture by 32% over static panels while maintaining robustness to actuator delays and cloud-induced disturbances.
-                  </p>
-
-                </div>
-              </div>
-              <div className="project-card">
-                <div className="project-card__left">
-                  <h4 className="heading-4">
-                    MATLAB, SIMULINK, C/C++, LATEX
-                  </h4>
-                </div>
-                <div
-                  className="project-card__middle"
-                  data-displacement="webp/myDistorsionImage.webp"
-                >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
-                </div>
-                <div className="project-card__right">
-                  <h2
-                    data-scroll
-                    data-scroll-offset="35%"
-                    data-scroll-repeat={true}
-                    data-scroll-class="alexxandria-anim"
-                    className="heading-2"
-                  >
-                    Ball on Plate
-                    <br /> Control System
-                  </h2>
-                  <p style={{ color: 'white' , textAlign: 'justify' }}>
-                     Simulated a closed-loop control system to balance a ball on a flat plate using MATLAB. Implemented a PD controller for real-time stabilization in two axes. The system successfully restored ball position from a 10 cm displacement in under 1 second and maintained steady tracking within ±1 cm, even under added random disturbances.
-                  </p>
-
-                </div>
-              </div>
-            </div>
-            <div className="Robotics-projects">
-              <div className="project-card">
-                <div className="project-card__left">
-                  <h4 className="heading-4">
-                    MATLAB, SIMULINK, C/C++
-                  </h4>
-                </div>
-                <div
-                  className="project-card__middle"
-                  data-displacement="webp/myDistorsionImage.webp"
-                >
-                  <img src="svg/supra1.png" alt="alexxandria model" />
-                  <img src="svg/supra2.png" alt="alexxandria logo" />
-                </div>
-                <div className="project-card__right">
-                  <h2
-                    data-scroll
-                    data-scroll-offset="35%"
-                    data-scroll-repeat={true}
-                    data-scroll-class="alexxandria-anim"
-                    className="heading-2"
-                  >
-                    Ball on Plate
-                    <br /> Control System
-                  </h2>
-                  <p style={{ color: 'white', textAlign: 'justify' }}>
-                    Simulated a closed-loop control system to balance a ball on a flat plate using MATLAB. Implemented a PD controller for real-time stabilization in two axes. The system successfully restored ball position from a 10 cm displacement in under 1 second and maintained steady tracking within ±1 cm, even under added random disturbances.
-                  </p>
-
-                </div>
-              </div>
-            </div>
+            ))}
           </section>
           <section
             data-scroll
@@ -773,3 +618,7 @@ const index: React.FC<indexProps> = () => {
 };
 
 export default index;
+
+
+
+
