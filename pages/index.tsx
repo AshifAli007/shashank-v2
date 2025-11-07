@@ -417,9 +417,13 @@ const index: React.FC<indexProps> = () => {
                     DESIGN
                   </h2>
                   <p style={{ color: 'white', textAlign: 'justify' }}>
+<<<<<<< HEAD
                     Created a 15-inch alloy wheel rim for a Formula SAE vehicle by accurately modeling from real-world specs in SolidWorks, incorporating bolt patterns, ventilation, and offsets. Performed stress and fatigue analysis using ANSYS, achieving safety factors 1.5 and dimensional tolerance under 0.5 mm for simulation and assembly clearance.
+=======
+                    Created a 15-inch alloy wheel rim for a Formula SAE vehicle by accurately modeling from real-world specs in SolidWorks, incorporating bolt patterns, ventilation, and offsets. Performed stress and fatigue analysis using ANSYS, achieving safety factors &gt; 1.5 and dimensional tolerance under 0.5 mm for simulation and assembly clearance.
+>>>>>>> f5730428be7b4537a1a25d00fde9363ebaafba93
                   </p>
-
+  
                 </div>
               </div>
               <div className="project-card">
