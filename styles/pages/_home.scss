@@ -486,7 +486,7 @@
 }
 
 .review-card__anim1 {
-  animation: reviewCardAnim1 10s ease-in-out infinite alternate;
+  animation: reviewCardAnim1 30s ease-in-out infinite alternate;
 
   &:hover {
     animation-play-state: paused;
@@ -494,7 +494,7 @@
 }
 
 .review-card__anim2 {
-  animation: reviewCardAnim2 10s ease-in-out infinite alternate;
+  animation: reviewCardAnim2 30s ease-in-out infinite alternate;
   &:hover {
     animation-play-state: paused;
   }
