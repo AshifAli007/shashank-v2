@@ -17,9 +17,6 @@ interface Ireply {
 const locomotiveScroll =
   typeof window !== `undefined` ? require("locomotive-scroll").default : null;
 
-const hoverEffect =
-  typeof window !== `undefined` ? require("hover-effect").default : null;
-
 // const transition: { duration: number; ease: any } = {
 //   duration: 1.4,
 //   ease: cubicBezier(0.6, 0.01, -0.05, 0.9),
@@ -61,24 +58,6 @@ const index: React.FC<indexProps> = () => {
       instance.update();
     };
     window.addEventListener("load", handleLoad);
-
-    // image hover effect
-    Array.from(document.querySelectorAll(".project-card__middle")).forEach(
-      (el: any) => {
-        const imgs: any = Array.from(el.querySelectorAll("img"));
-        new hoverEffect({
-          parent: el,
-          intensity: 0.2,
-          speedIn: el.dataset.speedin || undefined,
-          speedOut: el.dataset.speedout || undefined,
-          easing: el.dataset.easing || undefined,
-          hover: el.dataset.hover || undefined,
-          image1: imgs[0].getAttribute("src"),
-          image2: imgs[1].getAttribute("src"),
-          displacementImage: el.dataset.displacement,
-        });
-      }
-    );
 
     // header cursor
     const cursor = document.querySelector(".cursor");
