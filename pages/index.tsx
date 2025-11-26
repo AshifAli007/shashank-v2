@@ -113,14 +113,16 @@ const index: React.FC<indexProps> = () => {
   }, [reviews]);
 
   const handleSpeaker = () => {
-    const audio = document.querySelector("#audioPlayer") as HTMLVideoElement;
+    const audio = document.querySelector("#audioPlayer") as HTMLAudioElement | null;
+    if (!audio) return;
 
     if (speakerState === "muted") {
       setSpeakerState("unmuted");
-      audio.pause();
+      audio.currentTime = 0;
+      audio.play();
     } else {
       setSpeakerState("muted");
-      audio.play();
+      audio.pause();
     }
   };
 
@@ -179,7 +181,7 @@ const index: React.FC<indexProps> = () => {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:url" content="https://adeolaadeoti.xyz/" />
         </Head>
-        <audio loop id="audioPlayer" autoPlay style={{ display: "none" }}>
+        <audio loop id="audioPlayer" preload="auto" style={{ display: "none" }}>
           <source src="sound/preloader.mp3" type="audio/mp3" />
         </audio>
         {/* <motion.div
