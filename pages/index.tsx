@@ -112,6 +112,16 @@ const index: React.FC<indexProps> = () => {
     locomotiveInstanceRef.current?.update();
   }, [reviews]);
 
+  React.useEffect(() => {
+    const instance = locomotiveInstanceRef.current;
+    if (!instance) return;
+    if (isToggleOpen) {
+      instance.stop();
+    } else {
+      instance.start();
+    }
+  }, [isToggleOpen]);
+
   const handleSpeaker = () => {
     const audio = document.querySelector("#audioPlayer") as HTMLAudioElement | null;
     if (!audio) return;
