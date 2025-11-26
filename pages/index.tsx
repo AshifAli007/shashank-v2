@@ -418,8 +418,7 @@ const index: React.FC<indexProps> = () => {
 
                 </div>
               </div>
-            </div>
-            <div className="projects-grid">
+        
               <div className="project-card">
                 <div className="project-card__left">
                   <h4 className="heading-4 project-card__skills">
@@ -546,8 +545,7 @@ const index: React.FC<indexProps> = () => {
 
                 </div>
               </div>
-            </div>
-            <div className="projects-grid">
+        
               <div className="project-card">
                 <div className="project-card__left">
                   <h4 className="heading-4 project-card__skills">
@@ -644,8 +642,7 @@ const index: React.FC<indexProps> = () => {
 
                 </div>
               </div>
-            </div>
-            <div className="projects-grid">
+        
               <div className="project-card">
                 <div className="project-card__left">
                   <h4 className="heading-4 project-card__skills">
