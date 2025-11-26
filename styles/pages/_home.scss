@@ -151,6 +151,9 @@
   grid-column: 2/14;
   margin-top: 20rem;
   padding: 0 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
 
   @media only screen and (max-width: 57em) {
     grid-column: 1/15;
@@ -159,26 +162,23 @@
     padding: 0 4rem;
   }
 
+  h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
   p {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin: 0;
   }
 
   .project-card {
-    margin-right: 8rem;
-    padding: 30px;
-    .project-card__middle {
-      flex: 0 0 60%; /* Make it occupy 60% of the card */
-      max-width: 60%; /* Ensure it doesn't exceed 60% */
-    }
-    .project-card__middle img {
-      max-width: 100%; /* Ensure the image does not exceed the container's width */
-      max-height: 100%; /* Ensure the image does not exceed the container's height */
-      object-fit: contain; /* Ensure the entire image is visible without cropping */
-      display: block; /* Remove any inline spacing issues */
-    }
-    display: flex; /* Ensure the card uses flexbox */
-  align-items: center; 
+    width: 100%;
+    padding: var(--space-3);
+    gap: var(--space-2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     background: linear-gradient(
       180deg,
       rgba(35, 37, 49, 0.5) 0%,
@@ -188,32 +188,12 @@
     border: 0.2rem solid #20222e;
     box-sizing: border-box;
     backdrop-filter: blur(54px);
-    border-radius: 7.3rem;
-    display: flex;
-    align-items: center;
+    border-radius: 4.8rem;
     position: relative;
 
-    @media only screen and (max-width: 57em) {
-      width: 70%;
-      border-radius: 6.3rem;
-      flex-direction: column;
-    }
-    @media only screen and (max-width: 40em) {
-      width: 75%;
-    }
-    @media only screen and (max-width: 35em) {
-      width: 80%;
-    }
     @media only screen and (max-width: 30em) {
-      padding: 4rem;
-      width: 84%;
-      border-radius: 4.3rem;
-    }
-    @media only screen and (max-width: 23em) {
-      width: 90%;
-    }
-    @media only screen and (max-width: 22em) {
-      width: 100%;
+      padding: var(--space-2);
+      border-radius: 3rem;
     }
 
     &::before {
@@ -269,49 +249,21 @@
     }
 
     &__left {
-      margin-right: 2rem;
-      @media only screen and (max-width: 57em) {
-        order: 2;
-
-        display: flex;
-        align-self: flex-start;
-
-        display: none;
-      }
-      h4 {
-        transform: rotate(180deg);
-        writing-mode: tb-rl;
-        font-family: $font-tertiary;
-        font-size: 1.3rem;
-        line-height: 92.4%;
-        letter-spacing: 0.19em;
-        color: #8b8b8b;
-        line-height: 120%;
-        @media only screen and (max-width: 57em) {
-          transform: rotate(360deg);
-          writing-mode: lr-tb;
-          margin-top: 3rem;
-          margin-bottom: 2rem;
-        }
-      }
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
     }
     &__middle {
-      width: 40rem;
-      height: 30rem;
-      background-size: cover;
+      width: 100%;
+      max-width: var(--project-media-max);
+      min-height: var(--project-media-height);
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: relative;
-      border-radius: 5.3rem;
+      border-radius: 1.2rem;
       overflow: hidden;
-
-      @media only screen and (max-width: 57em) {
-        order: 1;
-        border-radius: 5rem;
-        height: 40rem;
-      }
-      @media only screen and (max-width: 30em) {
-        width: 30rem;
-        border-radius: 3rem;
-      }
 
       // canvas {
       //   position: absolute;
@@ -324,6 +276,8 @@
       img {
         width: 100%;
         height: 100%;
+        object-fit: contain;
+        border-radius: inherit;
 
         &:hover {
           &:nth-child(2) {
@@ -348,21 +302,10 @@
       }
     }
     &__right {
-      margin-left: 2rem;
-      @media only screen and (max-width: 57em) {
-        margin-left: 0rem;
-        display: flex;
-        flex-direction: column;
-        align-self: flex-start;
-        order: 3;
-        margin-top: 2rem;
-      }
-      h2 {
-        margin-bottom: 2rem;
-        @media only screen and (max-width: 57em) {
-          margin-bottom: 3rem;
-        }
-      }
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
     }
     &__link {
       display: inline-block;
@@ -405,22 +348,41 @@
     }
   }
 }
-.project-card__middle {
-  position: relative;
-  width: 100%; /* Ensure it spans the full width of its parent */
-  height: 100%; /* Ensure it spans the full height of its parent */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* Prevent any overflow outside the container */
-  background-color: #000; /* Optional: Add a background color for clarity */
+.project-card__skills {
+  font-family: $font-tertiary;
+  font-size: var(--project-skill);
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
 }
 
-.project-card__middle img {
-  max-width: 100%; /* Ensure the image does not exceed the container's width */
-  max-height: 100%; /* Ensure the image does not exceed the container's height */
-  object-fit: contain; /* Ensure the entire image is visible without cropping */
-  display: block; /* Remove any inline spacing issues */
+.project-card__title {
+  font-size: var(--project-title);
+  line-height: 1.25;
+  color: var(--color-white);
+  margin-bottom: var(--space-1);
+}
+
+.project-card__description {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  font-size: 1.6rem;
+  margin: 0;
+  max-width: 60ch;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  width: 100%;
+}
+
+@media only screen and (max-width: 40em) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
 // section=reviews
 
@@ -678,12 +640,6 @@
 .speaker__toggle--anim {
   left: 54%;
 }
-
-.Robotics-projects{
-  display: flex;
-  flex-flow: row;
-}
-
 
 .tech-image{
   width: 90px;
