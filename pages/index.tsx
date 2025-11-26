@@ -36,29 +36,31 @@ const index: React.FC<indexProps> = () => {
   if (error) console.log(error);
 
   const refScroll = React.useRef(null);
-  let lscroll: any;
+  const locomotiveInstanceRef = React.useRef<any>(null);
 
   React.useEffect(() => {
     ReactGa.initialize("UA-177100391-3");
     ReactGa.pageview(window.location.pathname + window.location.search);
 
-    if (!refScroll.current) return;
+    if (!refScroll.current || !locomotiveScroll) return;
     // @ts-ignore
-    lscroll = new locomotiveScroll({
+    const instance = new locomotiveScroll({
       el: refScroll.current,
       smooth: true,
       reloadOnContextChange: true,
       multiplier: 0.75,
       inertia: 0.5,
     });
+    locomotiveInstanceRef.current = instance;
 
     // update locomotive scroll
-    window.addEventListener("load", () => {
+    const handleLoad = () => {
       let image = document.querySelector("img");
       // @ts-ignore
-      const isLoaded = image!.complete && image!.naturalHeight !== 0;
-      lscroll.update();
-    });
+      image!.complete && image!.naturalHeight !== 0;
+      instance.update();
+    };
+    window.addEventListener("load", handleLoad);
 
     // image hover effect
     Array.from(document.querySelectorAll(".project-card__middle")).forEach(
@@ -96,7 +98,19 @@ const index: React.FC<indexProps> = () => {
       "%c Thanks for stopping by, this portofolio shows most of my work.\n",
       "color: #fff; background: #8000ff; padding:5px 0;",
     ]);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+      if (locomotiveInstanceRef.current) {
+        locomotiveInstanceRef.current.destroy();
+        locomotiveInstanceRef.current = null;
+      }
+    };
   }, []);
+
+  React.useEffect(() => {
+    locomotiveInstanceRef.current?.update();
+  }, [reviews]);
 
   const handleSpeaker = () => {
     const audio = document.querySelector("#audioPlayer") as HTMLVideoElement;
