@@ -9,7 +9,7 @@ const variants = {
     left: 0,
     pointerEvent: "none",
     transition: {
-      duration: 1,
+      duration: 0.35,
       ease: cubicBezier(0.6, 0.01, -0.05, 0.9),
     },
   },
@@ -17,8 +17,7 @@ const variants = {
     left: "-100vw",
     pointerEvent: "none",
     transition: {
-      delay: 1,
-      duration: 1,
+      duration: 0.25,
       ease: cubicBezier(0.6, 0.01, -0.05, 0.9),
     },
   },
