@@ -5,25 +5,25 @@ import { cubicBezier, motion } from "framer-motion";
 
 
 const openTransition = {
-  duration: 1.1,
-  delay: 1.2,
+  duration: 0.45,
+  delay: 0.15,
   ease: cubicBezier(0.6, 0.01, -0.05, 0.9),
 };
 
 const openTopTransition = {
-  duration: 1.1,
-  delay: 1.3,
+  duration: 0.45,
+  delay: 0.2,
   ease: cubicBezier(0.6, 0.01, -0.05, 0.9),
 };
 
 const openBottomTransition = {
-  duration: 1.1,
-  delay: 1.7,
+  duration: 0.45,
+  delay: 0.25,
   ease: cubicBezier(0.6, 0.01, -0.05, 0.9),
 };
 
 const closedTansition = {
-  duration: 1,
+  duration: 0.2,
   ease: cubicBezier(0.6, 0.01, -0.05, 0.9),
 };
 
