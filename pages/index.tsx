@@ -30,6 +30,11 @@ const index: React.FC<indexProps> = () => {
   const [isToggleOpen, setIsToggleOpen] = useState<boolean>(false);
   const { data: reviews, error } = useSwr("/api/tweets", fetcher);
 
+  const technologyList = React.useMemo<Ireply[]>(() => {
+    if (!reviews?.data) return [];
+    return [...reviews.data, ...reviews.data];
+  }, [reviews]);
+
   if (error) console.log(error);
 
   const refScroll = React.useRef(null);
@@ -671,9 +676,8 @@ const index: React.FC<indexProps> = () => {
             </div>
             <div className="section-reviews__bottom">
               <div className="section-reviews__bottom-wrapper review-card__anim1">
-                {reviews?.data.map((review: Ireply) => (
-
-                  <div key={review.id} className="review-card">
+                {technologyList.map((review: Ireply, index: number) => (
+                  <div key={`${review.id}-${index}`} className="review-card">
                     <div className="review-card__top">
                       <div className="review-card__top--left">
                         <img src={review.imgSource} className="tech-image" />

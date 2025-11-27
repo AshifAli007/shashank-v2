@@ -12,7 +12,8 @@
 
   @media only screen and (max-width: 45em) {
     grid-template-columns: minmax(2rem, 1fr) repeat(12, minmax(0, 6rem)) minmax(2rem, 1fr);
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
+    min-height: auto;
   }
   &::before {
     content: "";
@@ -64,7 +65,7 @@
 
   @media only screen and (max-width: 45em) {
     padding: 0 clamp(2rem, 6vw, 4rem);
-    margin-top: 12rem;
+    margin-top: clamp(6rem, 12vw, 10rem);
     text-align: center;
     align-items: center;
   }
@@ -518,16 +519,15 @@
     grid-column: 1/15;
     margin-top: 8rem;
     margin-bottom: 4rem;
+    overflow: hidden;
+
     &-wrapper {
-      width: 100%;
+      width: max-content;
       display: flex;
       align-items: stretch;
-      justify-content: center;
       gap: var(--space-2);
-      padding: 0 clamp(2rem, 6vw, 6rem);
-      overflow-x: auto;
-      scroll-snap-type: x proximity;
-      -webkit-overflow-scrolling: touch;
+      padding: 0;
+      will-change: transform;
 
       .review-card {
         flex: 0 0 auto;
@@ -543,7 +543,6 @@
         justify-content: space-between;
         text-align: center;
         gap: 1.5rem;
-        scroll-snap-align: center;
         border: 1px solid rgba(255, 255, 255, 0.05);
 
         @media only screen and (max-width: 45em) {
@@ -602,7 +601,7 @@
 }
 
 .review-card__anim1 {
-  animation: reviewCardAnim1 30s ease-in-out infinite alternate;
+  animation: reviewCardAnim1 40s linear infinite;
 
   &:hover {
     animation-play-state: paused;
@@ -610,7 +609,7 @@
 }
 
 .review-card__anim2 {
-  animation: reviewCardAnim2 30s ease-in-out infinite alternate;
+  animation: reviewCardAnim2 40s linear infinite;
   &:hover {
     animation-play-state: paused;
   }
@@ -681,6 +680,9 @@
     flex-wrap: wrap;
     max-width: 40rem;
     width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   a {
     @include centerContent;
