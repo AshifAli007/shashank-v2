@@ -61,6 +61,14 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
+
+  @media only screen and (max-width: 57em) {
+    grid-template-columns: minmax(3rem, 1fr) repeat(12, minmax(0, 8rem)) minmax(3rem, 1fr);
+  }
+
+  @media only screen and (max-width: 45em) {
+    grid-template-columns: minmax(2rem, 1fr) repeat(12, minmax(0, 6rem)) minmax(2rem, 1fr);
+  }
 }
 
 // cursor
