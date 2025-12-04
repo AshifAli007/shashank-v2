@@ -301,13 +301,7 @@ const index: React.FC<indexProps> = () => {
               >
                 👾 GH
               </a>
-              <a
-                href="https://twitter.com/adeolajs"
-                rel="noopener"
-                target="_blank"
-              >
-                🐦 TW
-              </a>
+            
               <a
                 href="https://www.linkedin.com/in/shanky_ch99"
                 rel="noopener"
@@ -721,18 +715,12 @@ const index: React.FC<indexProps> = () => {
             <p className="paragraph">Connect with me online</p>
             <div className="section-socials--links">
               <a
-                href="https://github.com/adeolaadeoti"
+                href="https://github.com/sc23bl"
                 rel="noopener"
                 target="_blank"
               >
                 👾 GitHub
-              </a>
-              <a
-                href="https://twitter.com/adeolajs"
-                rel="noopener"
-                target="_blank"
-              >
-                🐦 Twitter
+             
               </a>
               <a
                 href="https://www.linkedin.com/in/shashch99"
@@ -752,26 +740,11 @@ const index: React.FC<indexProps> = () => {
           </section>
         </main>
         <footer className="footer">
-          {/* <img
-            src="svg/adeola-logo-footer.svg"
-            alt="design and devloped by adeola"
-          /> */}
-          <div className="footer__socials">
-            <a
-              href="https://dribbble.com/shots/16100745-Adeola-Adeoti-Personal-Website"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="svg/dribble.svg" alt="dribble logo" />
-            </a>
-            <a
-              href="https://github.com/sc23bl"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="svg/github.svg" alt="github logo" />
-            </a>
-          </div>
+          <img
+            src="svg/Shashanklogo.png"
+            alt="Designed and devloped by Shashank"
+          />
+          <span className="footer-text">Designed and developed by Shashank</span>
         </footer>
       </div>
     </>

@@ -709,17 +709,38 @@
   border-top: 1px solid rgba(#c4c4c4, 0.25);
   gap: var(--space-3);
 
+  // make content start from the left instead of centered
+  justify-content: flex-start;
+
   @media only screen and (max-width: 45em) {
     flex-direction: column;
     padding-left: clamp(2rem, 6vw, 4rem);
     padding-right: clamp(2rem, 6vw, 4rem);
+    justify-content: center;
+    text-align: center;
   }
+
+  &__logo {
+    height: 3.2rem; // control logo size
+    width: auto;
+  }
+
+  &__text {
+    font-family: $font-tertiary;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--color-gray);
+  }
+
   &__socials {
     @include centerContent;
     width: auto;
     gap: var(--space-2);
   }
 }
+
 
 .speaker {
   @include centerContent;
