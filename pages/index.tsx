@@ -437,7 +437,7 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img loading="lazy" src="svg/supra1.png" alt="alexxandria model" />
+                  <img loading="lazy" src="svg/final1.png" alt="alexxandria model" />
                   <img loading="lazy" src="svg/final2.jpg" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
@@ -473,8 +473,8 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img loading="lazy" src="svg/supra1.png" alt="alexxandria model" />
-                  <img loading="lazy" src="svg/supra2.png" alt="alexxandria logo" />
+                  <img loading="lazy" src="svg/wishbone.png" alt="alexxandria model" />
+                  <img loading="lazy" src="svg/wishbone2.png" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -503,8 +503,8 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img loading="lazy" src="svg/supra1.png" alt="alexxandria model" />
-                  <img loading="lazy" src="svg/supra2.png" alt="alexxandria logo" />
+                  <img loading="lazy" src="svg/handle.png" alt="alexxandria model" />
+                  <img loading="lazy" src="svg/furrow.png" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -534,8 +534,8 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img loading="lazy" src="svg/supra1.png" alt="alexxandria model" />
-                  <img loading="lazy" src="svg/supra2.png" alt="alexxandria logo" />
+                  <img loading="lazy" src="svg/hub.png" alt="alexxandria model" />
+                  <img loading="lazy" src="svg/upright.png" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -570,8 +570,8 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img loading="lazy" src="svg/supra1.png" alt="alexxandria model" />
-                  <img loading="lazy" src="svg/supra2.png" alt="alexxandria logo" />
+                  <img loading="lazy" src="svg/panel1.png" alt="alexxandria model" />
+                  <img loading="lazy" src="svg/panel2.png" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -600,8 +600,8 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img loading="lazy" src="svg/supra1.png" alt="alexxandria model" />
-                  <img loading="lazy" src="svg/supra2.png" alt="alexxandria logo" />
+                  <img loading="lazy" src="svg/ball.png" alt="alexxandria model" />
+                  <img loading="lazy" src="svg/ball2.png" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -631,8 +631,8 @@ const index: React.FC<indexProps> = () => {
                   className="project-card__middle"
                   data-displacement="webp/myDistorsionImage.webp"
                 >
-                  <img loading="lazy" src="svg/supra1.png" alt="alexxandria model" />
-                  <img loading="lazy" src="svg/supra2.png" alt="alexxandria logo" />
+                  <img loading="lazy" src="svg/drone1.jpg" alt="alexxandria model" />
+                  <img loading="lazy" src="svg/drone2.jpg" alt="alexxandria logo" />
                 </div>
                 <div className="project-card__right">
                   <h2
@@ -642,11 +642,11 @@ const index: React.FC<indexProps> = () => {
                     data-scroll-class="alexxandria-anim"
                     className="heading-2 project-card__title"
                   >
-                    Ball on Plate
-                    <br /> Control System
+                    Surveillance
+                    <br /> Quadcopter Design
                   </h2>
                   <p className="project-card__description">
-                    Simulated a closed-loop control system to balance a ball on a flat plate using MATLAB. Implemented a PD controller for real-time stabilization in two axes. The system successfully restored ball position from a 10 cm displacement in under 1 second and maintained steady tracking within ±1 cm, even under added random disturbances.
+                    Designed and built a quadcopter from scratch, first with an Arduino based flight controller then migrated to a KK2.1.5 board. Implemented PID attitude and altitude hold with IMU fusion and MATLAB Simulink tuning; recovered from a 10 cm offset in under 1 s and held position within ±1 cm and attitude within ±2 degrees under gust and step disturbances.
                   </p>
 
                 </div>
