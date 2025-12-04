@@ -27,19 +27,19 @@
 
 @keyframes reviewCardAnim1 {
   from {
-    transform: translateX(-52%);
+    transform: translateX(0%);
   }
   to {
-    transform: translateX(0%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes reviewCardAnim2 {
   from {
-    transform: translateX(0%);
+    transform: translateX(-50%);
   }
   to {
-    transform: translateX(-52%);
+    transform: translateX(0%);
   }
 }
 
