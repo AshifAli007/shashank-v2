@@ -90,7 +90,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => {
             <div className="profile-header__info">
               From India<br />
               Lives & works in Tallahassee, FL<br />
-              shashanktestemail@gmail.com
+              s.chaudhary2k25@gmail.com
             </div>
             <hr className="profile-header__line" />
           </div>
@@ -155,7 +155,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => {
             <div
               className="timelineCol"
             >
-              2024 – Present
+              Sep 2024 – Present
             </div>
             <div>
               <strong>Danfoss Turbocor – Mechatronics Engineering Intern</strong>
@@ -181,7 +181,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => {
             <div
               className="timelineCol"
             >
-              2024
+              Jan 2024 - May 2025
             </div>
             <div>
               <strong>Florida State University – Teaching & Research Assistant</strong>
@@ -201,7 +201,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => {
             <div
               className="timelineCol"
             >
-              2021 – 2023
+              Nov 2021 – May 2023
             </div>
             <div>
               <strong>Sona Comstar – Graduate Engineering Trainee</strong>

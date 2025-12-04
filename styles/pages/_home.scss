@@ -2,6 +2,23 @@
   display: grid;
   grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
   position: relative;
+<<<<<<< HEAD
+
+=======
+  min-height: 100vh;
+  padding-bottom: 6rem;
+
+  @media only screen and (max-width: 57em) {
+    grid-template-columns: minmax(3rem, 1fr) repeat(12, minmax(0, 8rem)) minmax(3rem, 1fr);
+    padding-bottom: 4rem;
+  }
+
+  @media only screen and (max-width: 45em) {
+    grid-template-columns: minmax(2rem, 1fr) repeat(12, minmax(0, 6rem)) minmax(2rem, 1fr);
+    padding-bottom: 2rem;
+    min-height: auto;
+  }
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
   &::before {
     content: "";
     display: block;
@@ -12,12 +29,14 @@
     height: 26rem;
     background-repeat: no-repeat;
     background-size: contain;
+
     // background-image: url("../../public/webp/hand-left.webp");
     @media only screen and (max-width: 45em) {
       width: 20rem;
       height: 20rem;
     }
   }
+
   &::after {
     content: "";
     display: block;
@@ -40,12 +59,21 @@
 
 .header {
   grid-column: 2/14;
-  margin-top: 25rem;
-  padding: 0 6rem;
+  margin-top: clamp(16rem, 18vw, 25rem);
+  padding: 0 clamp(2.4rem, 6vw, 6rem);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+
+  @media only screen and (max-width: 57em) {
+    grid-column: 1/15;
+  }
 
   @media only screen and (max-width: 45em) {
-    grid-column: 1/15;
-    padding: 0 4rem;
+    padding: 0 clamp(2rem, 6vw, 4rem);
+    margin-top: clamp(6rem, 12vw, 10rem);
+    text-align: center;
+    align-items: center;
   }
 
   &__hero {
@@ -56,24 +84,33 @@
       letter-spacing: -0.03em;
       color: var(--color-white);
       position: relative;
+<<<<<<< HEAD
+
+=======
+      max-width: 20ch;
+      @media only screen and (max-width: 57em) {
+        max-width: 100%;
+      }
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
       @media only screen and (max-width: 45em) {
         font-size: 7rem;
+
         br {
           display: none;
         }
+        text-align: center;
       }
+
       @media only screen and (max-width: 28em) {
         font-size: 6rem;
       }
 
       &-gradient {
-        background: linear-gradient(
-          -45deg,
-          var(--color-light-blue),
-          var(--color-light-purple),
-          var(--color-light-blue),
-          var(--color-light-purple)
-        );
+        background: linear-gradient(-45deg,
+            var(--color-light-blue),
+            var(--color-light-purple),
+            var(--color-light-blue),
+            var(--color-light-purple));
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -81,8 +118,9 @@
         animation: gradient 3s ease infinite;
       }
     }
+
     &--cta {
-      margin-top: 13rem;
+      margin-top: clamp(4rem, 4vw, 13rem);
       display: inline-block;
       font-family: $font-tertiary;
       font-size: 1.8rem;
@@ -91,6 +129,10 @@
       color: var(--color-gray);
       text-decoration: none;
       position: relative;
+      @media only screen and (max-width: 45em) {
+        margin-top: 4rem;
+        text-align: center;
+      }
 
       &::after {
         display: block;
@@ -118,6 +160,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: var(--space-2);
+    flex-wrap: wrap;
     margin-top: 16rem;
     margin-bottom: 14rem;
     color: var(--color-gray);
@@ -126,10 +170,39 @@
       padding: 0 4rem;
     }
 
-    &--right {
-      width: 20rem;
-      @include centerContent;
+    @media only screen and (max-width: 45em) {
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
+      gap: var(--space-3);
+      margin-top: 10rem;
+      margin-bottom: 8rem;
+      padding: 0 clamp(2rem, 6vw, 4rem);
     }
+
+    &--left {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      @media only screen and (max-width: 45em) {
+        justify-content: center;
+      }
+    }
+
+    &--right {
+      width: auto;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: var(--space-2);
+
+      @media only screen and (max-width: 45em) {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+
     a {
       color: var(--color-gray);
       text-decoration: none;
@@ -138,6 +211,7 @@
       letter-spacing: -0.03em;
       text-transform: uppercase;
       transition: all 0.3s ease-in-out;
+
       &:hover {
         color: var(--color-white);
       }
@@ -146,86 +220,111 @@
 }
 
 // section
-
 .section-projects {
-  grid-column: 2/14;
+  grid-column: 1 / -1; // same line as Option A, just in case
+  // width: 100vw; // full viewport width
+  // margin-left: calc(-50vw + 50%); // centres the 100 vw block
+  padding: 0 4rem;
   margin-top: 20rem;
+<<<<<<< HEAD
+  // padding: 0 6rem;
+=======
   padding: 0 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
 
   @media only screen and (max-width: 57em) {
     grid-column: 1/15;
+    padding: 0 clamp(2rem, 6vw, 5rem);
   }
+
   @media only screen and (max-width: 45em) {
-    padding: 0 4rem;
+    padding: 0 clamp(1.6rem, 5vw, 4rem);
+    margin-top: 12rem;
+  }
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    @media only screen and (max-width: 45em) {
+      text-align: center;
+      align-items: center;
+    }
   }
 
   p {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin: 0;
   }
 
   .project-card {
-    margin-right: 8rem;
+<<<<<<< HEAD
+    // margin-right: 10rem;
     padding: 30px;
-    .project-card__middle {
-      flex: 0 0 60%; /* Make it occupy 60% of the card */
-      max-width: 60%; /* Ensure it doesn't exceed 60% */
-    }
+
+
+
     .project-card__middle img {
-      max-width: 100%; /* Ensure the image does not exceed the container's width */
-      max-height: 100%; /* Ensure the image does not exceed the container's height */
-      object-fit: contain; /* Ensure the entire image is visible without cropping */
-      display: block; /* Remove any inline spacing issues */
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
     }
-    display: flex; /* Ensure the card uses flexbox */
-  align-items: center; 
+
+    // display: flex;
+    /* Ensure the card uses flexbox */
+    // align-items: center;
+    background: linear-gradient(180deg,
+=======
+    width: 100%;
+    padding: clamp(2rem, 3vw, var(--space-3));
+    gap: var(--space-2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     background: linear-gradient(
       180deg,
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
       rgba(35, 37, 49, 0.5) 0%,
-      rgba(15, 15, 24, 0.5) 100%
-    );
+      rgba(15, 15, 24, 0.5) 100%);
     // background: rgba(15, 15, 24, 0.5) 100%;
     border: 0.2rem solid #20222e;
     box-sizing: border-box;
     backdrop-filter: blur(54px);
+<<<<<<< HEAD
     border-radius: 7.3rem;
     display: flex;
-    align-items: center;
+    // align-items: center;
+    // position: relative;
+
+
+=======
+    border-radius: 4.8rem;
     position: relative;
 
-    @media only screen and (max-width: 57em) {
-      width: 70%;
-      border-radius: 6.3rem;
-      flex-direction: column;
+    @media only screen and (max-width: 45em) {
+      border-radius: 3.6rem;
     }
-    @media only screen and (max-width: 40em) {
-      width: 75%;
-    }
-    @media only screen and (max-width: 35em) {
-      width: 80%;
-    }
+
     @media only screen and (max-width: 30em) {
-      padding: 4rem;
-      width: 84%;
-      border-radius: 4.3rem;
+      padding: var(--space-2);
+      border-radius: 2.4rem;
     }
-    @media only screen and (max-width: 23em) {
-      width: 90%;
-    }
-    @media only screen and (max-width: 22em) {
-      width: 100%;
-    }
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
 
     &::before {
       content: "";
       display: block;
       position: absolute;
-      top: -5rem;
-      right: -5rem;
+      top: -3rem;
+      right: 4rem;
       width: 15rem;
       height: 15rem;
       background-repeat: no-repeat;
       background-size: contain;
+      clip-path: inset(0 0 0 -5rem);
 
       @media only screen and (max-width: 57em) {
         top: -3rem;
@@ -239,37 +338,46 @@
       a {
         color: #6b9796;
       }
+
       &::before {
         background-image: url("../../public/svg/01.svg");
       }
     }
+
     &:nth-of-type(2) {
       a {
         color: #e6972f;
       }
+
       &::before {
         background-image: url("../../public/svg/02.svg");
       }
     }
+
     &:nth-of-type(3) {
       a {
         color: #57a3c7;
       }
+
       &::before {
         background-image: url("../../public/svg/03.svg");
       }
     }
+
     &:nth-of-type(4) {
       a {
         color: #c08af1;
       }
+
       &::before {
         background-image: url("../../public/svg/04.svg");
       }
     }
 
     &__left {
+<<<<<<< HEAD
       margin-right: 2rem;
+
       @media only screen and (max-width: 57em) {
         order: 2;
 
@@ -278,6 +386,7 @@
 
         display: none;
       }
+
       h4 {
         transform: rotate(180deg);
         writing-mode: tb-rl;
@@ -287,68 +396,105 @@
         letter-spacing: 0.19em;
         color: #8b8b8b;
         line-height: 120%;
+
         @media only screen and (max-width: 57em) {
           transform: rotate(360deg);
           writing-mode: lr-tb;
           margin-top: 3rem;
           margin-bottom: 2rem;
         }
+=======
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-1);
+      @media only screen and (max-width: 45em) {
+        align-items: center;
+        text-align: center;
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
       }
     }
+
     &__middle {
-      width: 40rem;
-      height: 30rem;
-      background-size: cover;
-      position: relative;
-      border-radius: 5.3rem;
+<<<<<<< HEAD
+      // width: 40rem;
+      height: 25rem;
+      flex: 0 0 50%;
+      /* 50 % of the card, don’t grow */
+      max-width: 50%;
       overflow: hidden;
 
+      background-size: cover;
+=======
+      width: 100%;
+      max-width: var(--project-media-max);
+      height: var(--project-media-height);
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
+      position: relative;
+      border-radius: 1.2rem;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       @media only screen and (max-width: 57em) {
-        order: 1;
-        border-radius: 5rem;
-        height: 40rem;
-      }
-      @media only screen and (max-width: 30em) {
-        width: 30rem;
-        border-radius: 3rem;
+        max-width: 100%;
+        height: clamp(20rem, 45vw, 28rem);
       }
 
-      // canvas {
-      //   position: absolute;
-      //   // border-radius: inherit !important;
-      //   z-index: 0;
-      //   width: 100% !important;
-      //   height: 100% !important;
-      // }
+      @media only screen and (max-width: 30em) {
+        height: clamp(18rem, 55vw, 24rem);
+      }
 
       img {
+        position: absolute;
+        inset: 0;
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: inherit;
+        transition: opacity 0.4s ease;
+      }
 
-        &:hover {
-          &:nth-child(2) {
-            opacity: 1;
-          }
-        }
+      img:first-of-type {
+        opacity: 1;
+        z-index: 1;
+      }
 
-        &:nth-child(1) {
-          position: absolute;
-          top: 0;
-          left: 0;
+      img:last-of-type {
+        opacity: 0;
+        z-index: 2;
+      }
+
+      &:hover {
+        img:first-of-type {
           opacity: 0;
-          transition: opacity 0.3s;
         }
+<<<<<<< HEAD
+
         &:nth-child(2) {
           position: absolute;
           top: 0;
           left: 0;
           opacity: 0;
           transition: opacity 0.3s;
+=======
+        img:last-of-type {
+          opacity: 1;
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
         }
       }
     }
+
     &__right {
-      margin-left: 2rem;
+<<<<<<< HEAD
+
+      flex: 1 1 50%;
+      /* takes the rest (≈ 50 %) */
+      max-width: 50%;
+
+
       @media only screen and (max-width: 57em) {
         margin-left: 0rem;
         display: flex;
@@ -357,13 +503,25 @@
         order: 3;
         margin-top: 2rem;
       }
+
       h2 {
         margin-bottom: 2rem;
+
         @media only screen and (max-width: 57em) {
           margin-bottom: 3rem;
         }
+=======
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2);
+      @media only screen and (max-width: 45em) {
+        align-items: center;
+        text-align: center;
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
       }
     }
+
     &__link {
       display: inline-block;
       font-family: $font-tertiary;
@@ -391,6 +549,7 @@
         }
       }
     }
+
     &__socials {
       margin-top: 10rem;
       display: flex;
@@ -402,26 +561,83 @@
         width: 6.5rem;
         margin-top: 5rem;
       }
+
+      @media only screen and (max-width: 45em) {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
   }
 }
-.project-card__middle {
-  position: relative;
-  width: 100%; /* Ensure it spans the full width of its parent */
-  height: 100%; /* Ensure it spans the full height of its parent */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* Prevent any overflow outside the container */
-  background-color: #000; /* Optional: Add a background color for clarity */
+<<<<<<< HEAD
+
+// .project-card__middle {
+//   position: relative;
+//   width: 100%;
+//   /* Ensure it spans the full width of its parent */
+//   height: 100%;
+//   /* Ensure it spans the full height of its parent */
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   overflow: hidden;
+//   /* Prevent any overflow outside the container */
+//   background-color: #000;
+//   /* Optional: Add a background color for clarity */
+// }
+
+// .project-card__middle img {
+//   max-width: 100%;
+//   /* Ensure the image does not exceed the container's width */
+//   max-height: 100%;
+//   /* Ensure the image does not exceed the container's height */
+//   object-fit: contain;
+//   /* Ensure the entire image is visible without cropping */
+//   display: block;
+//   /* Remove any inline spacing issues */
+// }
+
+=======
+.project-card__skills {
+  font-family: $font-tertiary;
+  font-size: var(--project-skill);
+  line-height: 1.4;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.65);
+  text-align: inherit;
 }
 
-.project-card__middle img {
-  max-width: 100%; /* Ensure the image does not exceed the container's width */
-  max-height: 100%; /* Ensure the image does not exceed the container's height */
-  object-fit: contain; /* Ensure the entire image is visible without cropping */
-  display: block; /* Remove any inline spacing issues */
+.project-card__title {
+  font-size: var(--project-title);
+  line-height: 1.25;
+  color: var(--color-white);
+  margin-bottom: var(--space-1);
 }
+
+.project-card__description {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  font-size: 1.6rem;
+  margin: 0;
+  max-width: 60ch;
+
+  @media only screen and (max-width: 45em) {
+    font-size: 1.5rem;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  width: 100%;
+
+  @media only screen and (max-width: 57em) {
+    grid-template-columns: 1fr;
+  }
+}
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
 // section=reviews
 
 .section-reviews__bg {
@@ -434,6 +650,13 @@
   grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
   padding: 8rem 0;
   transition: all 0.3s ease-in-out;
+
+<<<<<<< HEAD
+=======
+  @media only screen and (max-width: 57em) {
+    padding: 6rem 0;
+  }
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
   &__top {
     grid-column: 2/14;
     padding: 0 6rem;
@@ -441,8 +664,10 @@
     @media only screen and (max-width: 57em) {
       grid-column: 1/15;
     }
+
     @media only screen and (max-width: 45em) {
       padding: 0 4rem;
+      text-align: center;
     }
 
     p {
@@ -452,22 +677,65 @@
 
   &__bottom {
     grid-column: 1/15;
-    // overflow-x: hidden;
     margin-top: 8rem;
     margin-bottom: 4rem;
+<<<<<<< HEAD
+=======
+    overflow: hidden;
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
+
     &-wrapper {
-      @include centerContent;
       width: max-content;
+<<<<<<< HEAD
+
       .review-card {
         width: 200px;
         height: 200px;
-        background: #171e2f;
+        background: #b8caec;
         border-radius: 2rem;
         padding: 2rem;
         margin: 1.5rem;
+
+=======
+      display: flex;
+      align-items: stretch;
+      gap: var(--space-2);
+      padding: 0;
+      will-change: transform;
+
+      .review-card {
+        flex: 0 0 auto;
+        width: clamp(18rem, 20vw, 22rem);
+        min-height: clamp(18rem, 20vw, 22rem);
+        background: #171e2f;
+        border-radius: 2rem;
+        padding: 2rem;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+
+        @media only screen and (max-width: 45em) {
+          width: 16rem;
+          min-height: 18rem;
+          padding: 1.6rem;
+        }
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
         &__top {
           @include centerContent;
-          margin-bottom: 3rem;
+          width: 100%;
+          flex: 1;
+          justify-content: center;
+          &--left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+          }
           // &--left {
           // }
           // &--right {
@@ -508,7 +776,7 @@
 }
 
 .review-card__anim1 {
-  animation: reviewCardAnim1 10s ease-in-out infinite alternate;
+  animation: reviewCardAnim1 40s linear infinite;
 
   &:hover {
     animation-play-state: paused;
@@ -516,7 +784,12 @@
 }
 
 .review-card__anim2 {
+<<<<<<< HEAD
   animation: reviewCardAnim2 10s ease-in-out infinite alternate;
+
+=======
+  animation: reviewCardAnim2 40s linear infinite;
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
   &:hover {
     animation-play-state: paused;
   }
@@ -530,6 +803,7 @@
   @media only screen and (max-width: 57em) {
     grid-column: 1/15;
   }
+
   @media only screen and (max-width: 45em) {
     padding: 0 4rem;
   }
@@ -545,6 +819,7 @@
     @media only screen and (max-width: 56.25em) {
       font-size: 4rem;
     }
+
     @media only screen and (max-width: 37.5em) {
       font-size: 3rem;
     }
@@ -571,8 +846,10 @@
   @media only screen and (max-width: 57em) {
     grid-column: 1/15;
   }
+
   @media only screen and (max-width: 45em) {
-    padding: 0 4rem;
+    padding: 0 clamp(1.6rem, 6vw, 4rem);
+    text-align: center;
   }
 
   p {
@@ -585,7 +862,12 @@
     gap: 2rem;
     flex-wrap: wrap;
     max-width: 40rem;
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
+
   a {
     @include centerContent;
     color: var(--color-gray);
@@ -597,6 +879,7 @@
     font-size: 2rem;
     font-weight: 100;
     transition: all 0.3s ease-in-out;
+
     &:hover {
       color: var(--color-white);
     }
@@ -609,14 +892,18 @@
   margin-top: 12rem;
   padding: 3rem 6rem;
   border-top: 1px solid rgba(#c4c4c4, 0.25);
+  gap: var(--space-3);
 
   @media only screen and (max-width: 45em) {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    flex-direction: column;
+    padding-left: clamp(2rem, 6vw, 4rem);
+    padding-right: clamp(2rem, 6vw, 4rem);
   }
+
   &__socials {
     @include centerContent;
-    width: 6rem;
+    width: auto;
+    gap: var(--space-2);
   }
 }
 
@@ -628,6 +915,12 @@
   border-radius: 50px;
   padding: 1rem 1.5rem;
   position: relative;
+
+  @media only screen and (max-width: 45em) {
+    width: 6.5rem;
+    height: 3.5rem;
+    padding: 0.7rem 1.2rem;
+  }
 
   &__toggle {
     position: absolute;
@@ -641,20 +934,30 @@
     transition: all 0.5s ease-in-out;
     cursor: pointer;
     z-index: 2;
+
+    @media only screen and (max-width: 45em) {
+      height: 2.2rem;
+      width: 2.2rem;
+    }
   }
+
   // &__muted {
   // }
   &__unmuted {
     transform: rotate(180deg);
+
     .rect1-anim {
       animation: rect1Anim 1s ease-in-out infinite alternate;
     }
+
     .rect2-anim {
       animation: rect2Anim 1s ease-in-out infinite alternate;
     }
+
     .rect3-anim {
       animation: rect3Anim 1s ease-in-out infinite alternate;
     }
+
     .rect4-anim {
       animation: rect4Anim 1s ease-in-out infinite alternate;
     }
@@ -665,19 +968,53 @@
   left: 54%;
 }
 
-.Robotics-projects{
+<<<<<<< HEAD
+/* Works in all three sections that reuse this classname */
+
+.Robotics-projects {
   display: flex;
-  flex-flow: row;
+  flex-wrap: wrap;
+  gap: 10rem 2rem;
+  margin-top: 10rem;
+
+  .project-card {
+    gap: 2rem;
+    flex: 0 1 calc(50% - 1%);
+    position: relative;
+    // overflow-x: hidden;
+  }
+}
+
+.project-card {
+  position: relative;
+  width: 100%;
 }
 
 
-.tech-image{
+
+.tech-image {
   width: 100%;
   height: 100%;
+=======
+.tech-image{
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+
+  @media only screen and (max-width: 45em) {
+    width: 70px;
+    height: 70px;
+  }
+>>>>>>> 6d286e704efa90730e3e548e89397bd4e3c2c3b3
 }
 
-.review-card__bottom{
+.review-card__bottom {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin-top: auto;
 }
