@@ -1,9 +1,9 @@
 .header-wrapper {
   display: grid;
-  grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
+  grid-template-columns: 0.1fr repeat(12, minmax(min-content, 10rem)) 1fr;
   position: relative;
   min-height: 100vh;
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
 
   @media only screen and (max-width: 57em) {
     grid-template-columns: minmax(3rem, 1fr) repeat(12, minmax(0, 8rem)) minmax(3rem, 1fr);
