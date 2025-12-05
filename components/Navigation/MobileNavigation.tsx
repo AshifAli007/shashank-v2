@@ -5,25 +5,25 @@ import { cubicBezier, motion } from "framer-motion";
 
 
 const openTransition = {
-  duration: 1.1,
-  delay: 1.2,
+  duration: 0.45,
+  delay: 0.15,
   ease: cubicBezier(0.6, 0.01, -0.05, 0.9),
 };
 
 const openTopTransition = {
-  duration: 1.1,
-  delay: 1.3,
+  duration: 0.45,
+  delay: 0.2,
   ease: cubicBezier(0.6, 0.01, -0.05, 0.9),
 };
 
 const openBottomTransition = {
-  duration: 1.1,
-  delay: 1.7,
+  duration: 0.45,
+  delay: 0.25,
   ease: cubicBezier(0.6, 0.01, -0.05, 0.9),
 };
 
 const closedTansition = {
-  duration: 1,
+  duration: 0.2,
   ease: cubicBezier(0.6, 0.01, -0.05, 0.9),
 };
 
@@ -74,17 +74,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => {
         }
         className="navigation-bottom"
       >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr auto",
-            alignItems: "center",
-            gap: "2rem",
-            marginBottom: "4rem",
-            marginTop: "2rem",
-          }}
-          className="profile-header"
-        >
+        <div className="profile-header">
           <div>
             <h1 className="profile-header__name">Shashank Chaudhary</h1>
             <div className="profile-header__info">
@@ -105,7 +95,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => {
             </a>
           </div>
         </div>
-        <div className="resume-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2rem" }}>
+        <div className="resume-grid">
 
           <div>
             <h3>EDUCATION</h3>
@@ -144,14 +134,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => {
           <h3 style={{ "margin": "3rem 0" }}>
             PROFESSIONAL EXPERIENCE
           </h3>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "140px 1fr",
-              gap: "1.5rem",
-              alignItems: "start",
-            }}
-          >
+          <div className="resume-timeline">
             <div
               className="timelineCol"
             >
@@ -220,14 +203,7 @@ export const MobileNavigation = ({ variants, isOpen }: any) => {
           <h3 style={{ margin: "3rem 0" }}>
             PROJECTS & LEADERSHIP
           </h3>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "140px 1fr",
-              gap: "1.5rem",
-              alignItems: "start",
-            }}
-          >
+          <div className="resume-timeline">
             <div
               className="timelineCol"
             >
